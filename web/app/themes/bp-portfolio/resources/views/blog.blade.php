@@ -1,3 +1,7 @@
+{{--
+  Template Name: Blog Page
+--}}
+
 @extends('layouts.app')
 
 @section('content')
