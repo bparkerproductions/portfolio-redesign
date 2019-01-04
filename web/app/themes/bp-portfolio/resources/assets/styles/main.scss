@@ -1,5 +1,6 @@
 @import "common/variables/variables";
 @import "common/mixins/general";
+@import "common/extends/extends";
 
 /** Import everything from autoload */
 @import "./autoload/**/*";
