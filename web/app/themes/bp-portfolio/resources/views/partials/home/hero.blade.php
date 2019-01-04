@@ -17,7 +17,7 @@
       </h3>
     </div>
 
-    <div class="button-container">
+    <div class="button-container hard-center">
       <a href="{{$hero_button_link}}">
         <button>
           {{$hero_button_text}}
