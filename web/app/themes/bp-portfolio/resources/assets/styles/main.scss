@@ -13,11 +13,15 @@
  */
 // @import "~some-node-module";
 
+/** Import global styles **/
+@import "layouts/global/global";
+
 /** Import theme styles */
 @import "common/global";
 @import "components/buttons";
 @import "components/comments";
 @import "components/forms";
+@import "components/text";
 @import "layouts/header";
 @import "layouts/sidebar";
 @import "layouts/footer";

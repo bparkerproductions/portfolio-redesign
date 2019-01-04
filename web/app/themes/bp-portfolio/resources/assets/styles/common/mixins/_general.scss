@@ -2,26 +2,9 @@
 
 @import "media-query";
 @import "spacer";
+@import "text";
 
 /* General APP Mixins */
-@mixin font-smoothing() {
-  font-smoothing: antialiased;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-@mixin allHeaders() {
-  h1, h2, h3, h4, h5, h6 {
-    @content;
-  }
-}
-
-@mixin allText() {
-  li, ul, a, p, i, b, span {
-    @content;
-  }
-}
-
 @mixin scrollbar($color, $size) {
   &::-webkit-scrollbar {
     width: $size;

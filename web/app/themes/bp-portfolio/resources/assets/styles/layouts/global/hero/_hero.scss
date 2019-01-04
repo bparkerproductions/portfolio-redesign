@@ -1,0 +1,12 @@
+.hero {
+  @extend %hard-center;
+
+  @include allHeaders {
+    text-align: center;
+    color: $white;
+    text-transform: uppercase;
+  }
+
+  height: 100vh;
+  background-color: $blue;
+}

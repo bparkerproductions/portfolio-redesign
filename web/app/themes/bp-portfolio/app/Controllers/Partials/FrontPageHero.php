@@ -10,4 +10,13 @@ trait FrontPageHero {
   public function heroSubtitle() {
     return get_field("home_hero_subtitle");
   }
+
+  public function heroButtonUrl() {
+    $buttonLink = get_field("home_hero_button")['url'];
+    return $buttonLink ? $buttonLink : "#";
+  }
+
+  public function heroButtonText() {
+    return get_field("home_hero_button")['title'];
+  }
 }
