@@ -47,6 +47,16 @@ if (!class_exists('Roots\\Sage\\Container')) {
     require_once $composer;
 }
 
+/*
+ * Options pages
+ */
+if( function_exists('acf_add_options_page') ) {
+    acf_add_options_page([
+        'page_title' => 'Global'
+    ]);
+}
+
+
 /**
  * Sage required files
  *
