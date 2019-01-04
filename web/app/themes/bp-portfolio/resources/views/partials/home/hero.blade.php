@@ -19,8 +19,9 @@
 
     <div class="button-container hard-center">
       <a href="{{$hero_button_link}}">
-        <button>
+        <button class="button large black">
           {{$hero_button_text}}
+          <i class="fas fa-caret-right"></i>
         </button>
       </a>
     </div>

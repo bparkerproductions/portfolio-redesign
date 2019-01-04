@@ -3,6 +3,7 @@ body {
   @include font("Open Sans");
 }
 
+/* Headers */
 @include allHeaders {
   @include font("Lato");
 
@@ -19,4 +20,9 @@ h2 {
 
 h3 {
   font-size: $header3-size;
+}
+
+/* Various Text Elements */
+a {
+  text-decoration: none;
 }

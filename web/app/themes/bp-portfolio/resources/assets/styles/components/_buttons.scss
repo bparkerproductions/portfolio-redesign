@@ -1,3 +1,33 @@
 .button {
   @extend %btn-size-normal;
+  @extend %hard-center-no-column;
+
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 3px;
+  font-weight: 700;
+  font-size: 1.1em;
+
+  i,
+  svg {
+    margin-left: 8px;
+    font-size: 1.5em;
+    position: relative;
+    top: -0.5px;
+  }
+}
+
+/* Sizes */
+.button.large {
+  @extend %btn-size-large;
+}
+
+/* Colors */
+.button.black {
+  background-color: $shade-black;
+  color: $white;
+
+  &:hover {
+    background-color: $black;
+  }
 }
