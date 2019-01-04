@@ -1,0 +1,16 @@
+/*
+ * repeatable SPACER related elements,
+ * such as sections and margin
+ */
+
+@mixin large-spacer() {
+  padding: $spacer-large 0;
+
+  @include atTablet() {
+    padding: $spacer-medium-plus 0;
+  }
+
+  @include atMobile {
+    padding: $spacer-medium 0;
+  }
+}

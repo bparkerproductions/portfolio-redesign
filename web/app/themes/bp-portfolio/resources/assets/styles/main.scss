@@ -1,4 +1,5 @@
-@import "common/variables";
+@import "common/variables/variables";
+@import "common/mixins/general";
 
 /** Import everything from autoload */
 @import "./autoload/**/*";
@@ -16,7 +17,6 @@
 @import "components/buttons";
 @import "components/comments";
 @import "components/forms";
-@import "components/wp-classes";
 @import "layouts/header";
 @import "layouts/sidebar";
 @import "layouts/footer";
