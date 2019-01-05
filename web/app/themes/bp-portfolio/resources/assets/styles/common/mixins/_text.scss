@@ -18,6 +18,12 @@
   }
 }
 
+@mixin menuItems() {
+  li, ul {
+    @content;
+  }
+}
+
 @mixin font($family) {
   font-family: $family, Helvetica, Arial, sans-serif;
 }

@@ -1,0 +1,40 @@
+.primary-navigation {
+  padding: 35px 0 25px 0;
+  position: absolute;
+  width: 100%;
+
+  ul {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0 0 0 35px;
+
+    @include atTablet {
+      justify-content: center;
+      padding: 0;
+    }
+
+    li {
+      margin: 0 17.5px;
+      text-transform: uppercase;
+
+      a {
+        color: $white;
+        font-weight: 700;
+      }
+
+      &:hover {
+        transition: all 0.5s ease;
+        transform: translateY(-1px);
+      }
+    }
+
+    li.current-menu-item {
+      a {
+        color: $shade-black;
+        border-bottom: 2px solid $shade-black;
+        padding-bottom: 3px;
+      }
+    }
+  }
+}
