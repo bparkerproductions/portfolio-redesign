@@ -13,9 +13,13 @@
   }
 
   @include atMobile {
-    background-color: $white;
-    padding: 15px 0;
     justify-content: space-between;
+  }
+
+  &.active {
+    @include atMobile {
+      background-color: $white;
+    }
   }
 
   @import "content-container";

@@ -1,8 +1,11 @@
 export default {
   init() {
-    // JavaScript to be fired on all pages
+    $('.toggle-container').on('click', this.toggleNav);
   },
-  finalize() {
-    // JavaScript to be fired on all pages, after page specific JS is fired
+  toggleNav() {
+    let $navbar = $('.primary-navigation');
+    let $content = $('.content-container');
+    $navbar.toggleClass('active');
+    $content.toggleClass('active');
   },
 };

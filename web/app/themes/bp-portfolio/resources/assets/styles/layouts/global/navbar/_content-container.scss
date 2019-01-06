@@ -3,6 +3,12 @@
     padding: 35px 0 55px 0;
   }
 
+  transform: translateY(-300px);
+
+  &.active {
+    transform: translateY(0);
+  }
+
   ul {
     list-style: none;
     display: flex;
