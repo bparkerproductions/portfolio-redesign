@@ -7,4 +7,5 @@ use Sober\Controller\Controller;
 class FrontPage extends Controller {
   use Partials\FrontPageHero;
   use Partials\FrontPageAbout;
+  use Partials\FrontPageProjects;
 }
