@@ -8,4 +8,7 @@
 
   {{-- Hero Section --}}
   @include('partials.home.hero')
+
+  {{-- About Section --}}
+  @include('partials.home.about')
 @endsection
