@@ -1,26 +1,36 @@
 .primary-navigation {
-  padding: 35px 0 25px 0;
-  position: absolute;
-  width: 100%;
-  display: flex;
-  -webkit-clip-path: polygon(0% 0%, 300% 0%, 0% 100%, 0% 100%);
-  clip-path: polygon(0% 0%, 300% 0%, 0% 100%, 0% 100%);
+  .primary-content {
+    padding: 35px 0 25px 0;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    transition: all 0.5s ease;
+    -webkit-clip-path: polygon(0% 0%, 300% 0%, 0% 100%, 0% 100%);
+    clip-path: polygon(0% 0%, 300% 0%, 0% 100%, 0% 100%);
+
+    @include atTablet {
+      justify-content: center;
+    }
+
+    @include atMobile {
+      justify-content: space-between;
+    }
+
+    &:not(.active) {
+      @include atMobile {
+        transform: translateY(-300px);
+      }
+    }
+
+    &.active {
+      @include atMobile {
+        background-color: $white;
+        transform: translateY(0);
+      }
+    }
+
+    @import "content-container";
+  }
 
   @import "toggle-container";
-
-  @include atTablet {
-    justify-content: center;
-  }
-
-  @include atMobile {
-    justify-content: space-between;
-  }
-
-  &.active {
-    @include atMobile {
-      background-color: $white;
-    }
-  }
-
-  @import "content-container";
 }
