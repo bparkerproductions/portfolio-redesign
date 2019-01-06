@@ -2,7 +2,6 @@
   .primary-content {
     padding: 35px 0 25px 0;
     position: absolute;
-    width: 100%;
     display: flex;
     transition: all 0.5s ease;
     -webkit-clip-path: polygon(0% 0%, 300% 0%, 0% 100%, 0% 100%);
@@ -14,6 +13,7 @@
 
     @include atMobile {
       justify-content: space-between;
+      width: 100%;
     }
 
     &:not(.active) {

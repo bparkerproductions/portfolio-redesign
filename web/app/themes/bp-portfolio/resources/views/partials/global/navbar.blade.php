@@ -1,5 +1,5 @@
-<nav class="primary-navigation">
-  <section class="primary-content">
+<nav class="primary-navigation column-center">
+  <section class="primary-content inner-container">
 
     <div class="content-container">
       <ul>
