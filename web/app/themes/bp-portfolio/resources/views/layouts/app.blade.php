@@ -4,7 +4,7 @@
   <body @php body_class() @endphp>
     @php do_action('get_header') @endphp
     <div class="content">
-      {{$primary_navbar}}
+      @include('partials.global.navbar')
       <main class="main">
         @yield('content')
       </main>

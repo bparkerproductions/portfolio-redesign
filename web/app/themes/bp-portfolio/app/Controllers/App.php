@@ -28,16 +28,15 @@ class App extends Controller {
       return get_the_title();
     }
 
-    public function primaryNavbar() {
-      return wp_nav_menu([
-        'name' => 'primary',
-        'items_wrap' => '
-          <nav class="primary-navigation">
-            <ul id="%1$s" class="%2$s">%3$s</ul>
-          </nav>
-          ',
-          'container' => false
-      ]);
+    public function primaryNavItems() {
+      $menuLocations = get_nav_menu_locations();
+      $menuID = $menuLocations['primary_navigation'];
+
+      return wp_get_nav_menu_items($menuID);
+    }
+
+    public static function IsActive($page) {
+      return is_page($page) ? "active" : "";
     }
 
     use Partials\GlobalOptions;

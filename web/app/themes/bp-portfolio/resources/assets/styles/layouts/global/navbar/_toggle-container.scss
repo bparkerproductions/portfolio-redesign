@@ -1,0 +1,13 @@
+.toggle-container {
+  margin-right: 15px;
+
+  i,
+  svg {
+    font-size: 2em;
+    color: $shade-black;
+  }
+
+  @include atMobileAndUp {
+    display: none;
+  }
+}

@@ -2,62 +2,71 @@
   padding: 35px 0 25px 0;
   position: absolute;
   width: 100%;
+  display: flex;
+
+  @import "toggle-container";
+
+  @include atTablet {
+    justify-content: center;
+  }
 
   @include atMobile {
     background-color: $white;
-    padding: 15px 0;
+    justify-content: space-between;
   }
 
-  ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0 0 0 35px;
+  .content-container {
+    ul {
+      list-style: none;
+      display: flex;
+      margin: 0;
+      padding: 0 0 0 35px;
 
-    @include atTablet {
-      justify-content: center;
-      padding: 0;
-    }
-
-    @include atMobile {
-      flex-direction: column;
-      padding-left: 20px;
-    }
-
-    li {
-      margin: 0 17.5px;
-      text-transform: uppercase;
+      @include atTablet {
+        justify-content: center;
+        padding: 0;
+      }
 
       @include atMobile {
-        margin: 7.5px 0;
+        flex-direction: column;
+        padding-left: 20px;
       }
 
-      a {
-        color: $white;
-        font-weight: 700;
+      li {
+        margin: 0 17.5px;
+        text-transform: uppercase;
 
         @include atMobile {
+          margin: 7.5px 0;
+        }
+
+        a {
+          color: $white;
+          font-weight: 700;
+
+          @include atMobile {
+            color: $shade-black;
+          }
+        }
+
+        &:hover {
+          transition: all 0.5s ease;
+          transform: translateY(-1px);
+        }
+      }
+
+      li.active {
+        a {
           color: $shade-black;
-        }
-      }
+          padding-bottom: 4.5px;
 
-      &:hover {
-        transition: all 0.5s ease;
-        transform: translateY(-1px);
-      }
-    }
+          @include atMobileAndUp {
+            border-bottom: 2px solid $shade-black;
+          }
 
-    li.current-menu-item {
-      a {
-        color: $shade-black;
-        padding-bottom: 4.5px;
-
-        @include atMobileAndUp {
-          border-bottom: 2px solid $shade-black;
-        }
-
-        @include atMobile {
-          color: $blue;
+          @include atMobile {
+            color: $blue;
+          }
         }
       }
     }
