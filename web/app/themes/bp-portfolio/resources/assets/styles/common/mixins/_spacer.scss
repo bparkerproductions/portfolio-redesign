@@ -3,14 +3,10 @@
  * such as sections and margin
  */
 
-@mixin large-spacer() {
-  padding: $spacer-large 0;
+@mixin spacer() {
+  padding: $spacer-medium-plus 0;
 
   @include atTablet() {
-    padding: $spacer-medium-plus 0;
-  }
-
-  @include atMobile {
-    padding: $spacer-medium 0;
+    padding: $spacer-small 0;
   }
 }

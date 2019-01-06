@@ -1,6 +1,8 @@
 body {
   @include font-smoothing;
   @include font("Open Sans");
+
+  font-size: 16px;
 }
 
 /* Headers */
@@ -29,6 +31,12 @@ h3 {
   font-size: $header3-size;
 }
 
+.para {
+  color: $para;
+  line-height: 1.5;
+  font-size: 1.1em;
+}
+
 /* Various Text Elements */
 a {
   text-decoration: none;
@@ -37,6 +45,11 @@ a {
 button,
 .button {
   @include font("Lato");
+}
+
+/* Global Spacer */
+.spacer {
+  @include spacer;
 }
 
 /* Inner Containers */

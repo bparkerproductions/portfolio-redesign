@@ -9,7 +9,10 @@
 
   h1 {
     margin-bottom: 20px;
-    font-size: $header-extra-large;
+
+    @include atMobileAndUp {
+      font-size: $header-extra-large;
+    }
   }
 
   .button-container {
