@@ -55,8 +55,9 @@ button,
 /* Inner Containers */
 .inner-container {
   width: 85%;
+  max-width: 1200px;
 
   @include atMobile {
-    width: 95%;
+    width: 90%;
   }
 }

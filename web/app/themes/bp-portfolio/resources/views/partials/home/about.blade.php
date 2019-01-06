@@ -17,5 +17,16 @@
         </a>
       </div>
     </div>
+
+    <div class="technologies-container">
+      <h2 class="blue">
+        {{$tech_header}}
+      </h2>
+      <div class="technologies">
+        @foreach($technologies as $tech)
+          <i class="{{$tech['icon']}}"></i>
+        @endforeach
+      </div>      
+    </div>
   </div>
 </section>

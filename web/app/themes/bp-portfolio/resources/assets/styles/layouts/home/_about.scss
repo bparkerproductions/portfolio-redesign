@@ -5,11 +5,34 @@
     margin-bottom: 10px;
   }
 
+  .inner-container {
+    display: flex;
+    justify-content: space-between;
+
+    @include atTablet {
+      flex-direction: column;
+    }
+  }
+
   .button-container {
     margin-top: 30px;
   }
 
   .content-container {
-    width: 60%;
+    width: 50%;
+
+    @include atTablet {
+      margin-bottom: $spacer-medium;
+      width: auto;
+    }
+  }
+
+  .technologies {
+    i,
+    svg {
+      color: $shade-black;
+      font-size: 2.2em;
+      margin: 0 12.5px 12.5px 0;
+    }
   }
 }
