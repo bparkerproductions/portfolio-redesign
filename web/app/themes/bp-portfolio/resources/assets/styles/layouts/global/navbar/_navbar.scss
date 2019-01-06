@@ -3,6 +3,8 @@
   position: absolute;
   width: 100%;
   display: flex;
+  -webkit-clip-path: polygon(0% 0%, 300% 0%, 0% 100%, 0% 100%);
+  clip-path: polygon(0% 0%, 300% 0%, 0% 100%, 0% 100%);
 
   @import "toggle-container";
 
@@ -12,63 +14,9 @@
 
   @include atMobile {
     background-color: $white;
+    padding: 15px 0;
     justify-content: space-between;
   }
 
-  .content-container {
-    ul {
-      list-style: none;
-      display: flex;
-      margin: 0;
-      padding: 0 0 0 35px;
-
-      @include atTablet {
-        justify-content: center;
-        padding: 0;
-      }
-
-      @include atMobile {
-        flex-direction: column;
-        padding-left: 20px;
-      }
-
-      li {
-        margin: 0 17.5px;
-        text-transform: uppercase;
-
-        @include atMobile {
-          margin: 7.5px 0;
-        }
-
-        a {
-          color: $white;
-          font-weight: 700;
-
-          @include atMobile {
-            color: $shade-black;
-          }
-        }
-
-        &:hover {
-          transition: all 0.5s ease;
-          transform: translateY(-1px);
-        }
-      }
-
-      li.active {
-        a {
-          color: $shade-black;
-          padding-bottom: 4.5px;
-
-          @include atMobileAndUp {
-            border-bottom: 2px solid $shade-black;
-          }
-
-          @include atMobile {
-            color: $blue;
-          }
-        }
-      }
-    }
-  }
+  @import "content-container";
 }
