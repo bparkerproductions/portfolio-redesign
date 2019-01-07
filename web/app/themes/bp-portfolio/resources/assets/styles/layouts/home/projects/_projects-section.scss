@@ -1,0 +1,13 @@
+.projects-section {
+  display: flex;
+  flex-wrap: wrap;
+
+  .project {
+    width: 300px;
+    margin-right: 5%;
+
+    img {
+      width: 100%;
+    }
+  }
+}

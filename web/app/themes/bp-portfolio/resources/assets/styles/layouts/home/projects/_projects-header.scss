@@ -1,6 +1,6 @@
 .projects-section-header {
   display: flex;
-  margin-bottom: 35px;
+  margin-bottom: $spacer-large;
 
   .project-col {
     @extend %column-center;

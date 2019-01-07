@@ -24,9 +24,9 @@
         @if($category['projects'])
           <div class="project">
             @foreach($category['projects'] as $project)
-              <h3>
+              <h4>
                 {{$project['title']}}
-              </h3>
+              </h4>
               <div class="image-container">
                 <a href="{{$project['link']}}">
                   <img src="{{$project['image']}}">
