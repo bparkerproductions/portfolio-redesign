@@ -8,7 +8,10 @@
       @foreach($project_categories as $category)
         <div class="project-col">
           <i class="{{$category['icon']}}"></i>
-          {{$category['cat_title']}}
+
+          <span>
+            {{$category['cat_title']}}
+          </span>
         </div>
       @endforeach
     </div>

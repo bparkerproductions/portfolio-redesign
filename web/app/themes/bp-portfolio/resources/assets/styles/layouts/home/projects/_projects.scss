@@ -1,8 +1,5 @@
 .projects {
-  .projects-section-header {
-    display: flex;
-    margin-bottom: 35px;
-  }
+  @import "projects-header";
 
   .projects-section {
     display: flex;

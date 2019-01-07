@@ -1,0 +1,32 @@
+.projects-section-header {
+  display: flex;
+  margin-bottom: 35px;
+
+  .project-col {
+    @extend %column-center;
+
+    background-color: $shade-black;
+    padding: 10px 15px;
+    border-right: 1px solid rgba($white, 0.5);
+    width: 75px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+
+    &:hover {
+      background-color: $black;
+      transform: translateY(-1px);
+    }
+
+    span {
+      color: $white;
+      font-size: 14px;
+    }
+
+    i,
+    svg {
+      color: $blue;
+      font-size: 1.5em;
+      margin-bottom: 5px;
+    }
+  }
+}
