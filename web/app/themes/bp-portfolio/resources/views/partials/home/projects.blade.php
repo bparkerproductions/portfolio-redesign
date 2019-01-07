@@ -7,6 +7,7 @@
     <div class="projects-section-header">
       @foreach($project_categories as $category)
         <div class="project-col">
+          <i class="{{$category['icon']}}"></i>
           {{$category['cat_title']}}
         </div>
       @endforeach
@@ -17,21 +18,23 @@
       {{-- Loop through each project in every category --}}
       @foreach($project_categories as $category)
 
-        <div class="project">
-          @foreach($category['projects'] as $project)
-            <h3>
-              {{$project['title']}}
-            </h3>
-            <div class="image-container">
-              <a href="{{$project['link']}}">
-                <img src="{{$project['image']}}">
-              </a>
-            </div>
-            <div class="text-container">
-              {{$project['desc']}}
-            </div>
-          @endforeach
-        </div>
+        @if($category['projects'])
+          <div class="project">
+            @foreach($category['projects'] as $project)
+              <h3>
+                {{$project['title']}}
+              </h3>
+              <div class="image-container">
+                <a href="{{$project['link']}}">
+                  <img src="{{$project['image']}}">
+                </a>
+              </div>
+              <div class="text-container">
+                {{$project['desc']}}
+              </div>
+            @endforeach
+          </div>
+        @endif
       @endforeach
     </div>
   </div>
