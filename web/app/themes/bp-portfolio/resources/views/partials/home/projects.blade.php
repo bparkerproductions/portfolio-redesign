@@ -34,7 +34,7 @@
               </div>
               <div class="text-container">
                 <p class="para">
-                  {{$project['desc']}}
+                  {!!$project['desc']!!}
                 </p>
               </div>
             </div>

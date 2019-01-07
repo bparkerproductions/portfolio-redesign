@@ -1,7 +1,7 @@
 .primary-content.scrolled {
   position: fixed;
   background-color: $white;
-  width: 100%;
+  min-width: 100%;
   border-bottom: 1px solid rgba($bg-grey, 0.5);
   padding-top: 25px;
 

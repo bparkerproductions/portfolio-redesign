@@ -1,8 +1,18 @@
 export default {
   init() {
-    // JavaScript to be fired on the home page
+    this.appendReadLink();
+
+    $('span.read').click(this.expandDesc);
   },
-  finalize() {
-    // JavaScript to be fired on the home page, after the init JS
+  appendReadLink() {
+    let $para = $('.project .para');
+    $('.hide', $para).hide();
+
+    $para.append('<span class=\'read\'>Read More...</span>');
+  },
+  expandDesc() {
+    let $para = $(this).closest('.para');
+    $(this).text('Show less...');
+    $('.hide', $para).toggle();
   },
 };
