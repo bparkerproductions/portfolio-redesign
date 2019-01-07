@@ -22,8 +22,8 @@
       @foreach($project_categories as $category)
 
         @if($category['projects'])
-          <div class="project">
-            @foreach($category['projects'] as $project)
+          @foreach($category['projects'] as $project)
+            <div class="project">
               <h4>
                 {{$project['title']}}
               </h4>
@@ -33,10 +33,12 @@
                 </a>
               </div>
               <div class="text-container">
-                {{$project['desc']}}
+                <p class="para">
+                  {{$project['desc']}}
+                </p>
               </div>
-            @endforeach
-          </div>
+            </div>
+          @endforeach
         @endif
       @endforeach
     </div>

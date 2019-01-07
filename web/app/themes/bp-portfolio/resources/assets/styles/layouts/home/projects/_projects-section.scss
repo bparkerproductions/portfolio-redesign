@@ -1,13 +1,27 @@
 .projects-section {
   display: flex;
   flex-wrap: wrap;
+  border-top: 1px solid rgba($bg-grey, 0.5);
+  padding-top: 30px;
 
   .project {
     width: 300px;
     margin-right: 5%;
+    margin-bottom: 50px;
 
-    img {
-      width: 100%;
+    .image-container {
+      border-bottom: 1px solid rgba($bg-grey, 0.5);
+      padding-bottom: 25px;
+
+      img {
+        height: 250px;
+        width: 300px;
+        object-fit: cover;
+      }
+    }
+
+    p {
+      font-size: 0.95em;
     }
   }
 }
