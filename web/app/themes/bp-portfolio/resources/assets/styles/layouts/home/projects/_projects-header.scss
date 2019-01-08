@@ -2,31 +2,48 @@
   display: flex;
   margin-bottom: $spacer-small;
 
-  .project-col {
-    @extend %column-center;
+  @include atPortrait {
+    flex-direction: column;
+  }
 
-    background-color: $shade-black;
-    padding: 10px 15px;
-    border-right: 1px solid rgba($white, 0.5);
-    width: 75px;
-    cursor: pointer;
-    transition: all 0.5s ease;
+  h1 {
+    margin: 0;
+  }
 
-    &:hover {
-      background-color: $black;
-      transform: translateY(-1px);
+  .project-select {
+    display: flex;
+    margin-left: 5%;
+
+    @include atPortrait {
+      margin: 5% 0 0 0;
     }
 
-    span {
-      color: $white;
-      font-size: 14px;
-    }
+    .project-col {
+      @extend %column-center;
 
-    i,
-    svg {
-      color: $blue;
-      font-size: 1.5em;
-      margin-bottom: 5px;
+      background-color: $shade-black;
+      padding: 10px 15px;
+      border-right: 1px solid rgba($white, 0.5);
+      width: 75px;
+      cursor: pointer;
+      transition: all 0.5s ease;
+
+      &:hover {
+        background-color: $black;
+        transform: translateY(-1px);
+      }
+
+      span {
+        color: $white;
+        font-size: 14px;
+      }
+
+      i,
+      svg {
+        color: $blue;
+        font-size: 1.5em;
+        margin-bottom: 5px;
+      }
     }
   }
 }

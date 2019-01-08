@@ -10,6 +10,18 @@
   }
 }
 
+@mixin atPortrait() {
+  @media screen and (max-width: $portrait) {
+    @content;
+  }
+}
+
+@mixin atPortraitAndUp() {
+  @media screen and (min-width: $portrait) {
+    @content;
+  }
+}
+
 @mixin atMobile() {
   @media screen and (max-width: $mobile) {
     @content;

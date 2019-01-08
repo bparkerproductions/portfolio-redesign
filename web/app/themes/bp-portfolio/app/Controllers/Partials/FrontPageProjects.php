@@ -11,7 +11,11 @@ trait FrontPageProjects {
     return get_field("project_categories");
   }
 
-  public function projectsButton() {
-    return get_field("projects_button");
+  public function projectsBtnLink() {
+    return get_field("projects_button")['url'];
+  }
+
+  public function projectsBtnText() {
+    return get_field("projects_button")['title'];
   }
 }

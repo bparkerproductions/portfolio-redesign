@@ -1,19 +1,21 @@
 <section class="spacer column-center projects">
   <div class="inner-container">
-    <h1 class="blue">
-      {{$projects_title}}
-    </h1>
-
     <div class="projects-section-header">
-      @foreach($project_categories as $category)
-        <div class="project-col">
-          <i class="{{$category['icon']}}"></i>
+      <h1 class="blue">
+        {{$projects_title}}
+      </h1>
 
-          <span>
-            {{$category['cat_title']}}
-          </span>
-        </div>
-      @endforeach
+      <div class="project-select">
+        @foreach($project_categories as $category)
+          <div class="project-col">
+            <i class="{{$category['icon']}}"></i>
+
+            <span>
+              {{$category['cat_title']}}
+            </span>
+          </div>
+        @endforeach
+      </div>
     </div>
 
     <div class="projects-section">
@@ -43,6 +45,15 @@
           @endforeach
         @endif
       @endforeach
+    </div>
+
+    <div class="button-container">
+      <a href="{{$projects_btn_link}}">
+        <button class="button black large">
+          {{$projects_btn_text}}
+          <i class="fas fa-caret-right"></i>
+        </button>
+      </a>
     </div>
   </div>
 </section>
