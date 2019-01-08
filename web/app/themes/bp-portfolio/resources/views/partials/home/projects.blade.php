@@ -24,18 +24,20 @@
         @if($category['projects'])
           @foreach($category['projects'] as $project)
             <div class="project">
-              <h4>
-                {{$project['title']}}
-              </h4>
+              <div class="header-container">
+                <h4 class="white">
+                  {{$project['title']}}
+                </h4>
+                <div class="icon-container">
+                  @foreach($project['tech'] as $tech)
+                    <i class="{{$tech['icon']}}"></i>
+                  @endforeach
+                </div>
+              </div>
               <div class="image-container">
                 <a href="{{$project['link']}}">
                   <img src="{{$project['image']}}">
                 </a>
-              </div>
-              <div class="text-container">
-                <p class="para">
-                  {!!$project['desc']!!}
-                </p>
               </div>
             </div>
           @endforeach

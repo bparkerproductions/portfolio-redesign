@@ -5,23 +5,44 @@
   padding-top: 30px;
 
   .project {
-    width: 300px;
-    margin-right: 5%;
-    margin-bottom: 50px;
+    width: 30%;
+    position: relative;
+    margin: 0 3% 5% 0;
 
     .image-container {
-      border-bottom: 1px solid rgba($bg-grey, 0.5);
-      padding-bottom: 25px;
-
       img {
         height: 250px;
-        width: 300px;
+        width: 100%;
         object-fit: cover;
       }
     }
 
     p {
       font-size: 0.95em;
+    }
+
+    .header-container {
+      padding: 10px 0;
+      position: absolute;
+      width: 100%;
+      text-align: center;
+      background-color: rgba($blue, 0.85);
+
+      .icon-container {
+        margin-top: 10px;
+
+        i,
+        svg {
+          color: $black;
+          font-size: 1.2em;
+          margin: 0 3.5px;
+        }
+      }
+
+      h4 {
+        margin: 0;
+        margin-bottom: 12px;
+      }
     }
   }
 }
