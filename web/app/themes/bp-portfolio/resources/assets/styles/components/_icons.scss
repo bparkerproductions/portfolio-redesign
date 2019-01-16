@@ -1,0 +1,18 @@
+/* Default styles for pagination and general toggling */
+.toggle-more {
+  @extend %hard-center;
+
+  i,
+  svg {
+    font-size: 3em;
+    color: $blue;
+    margin-bottom: $spacer-medium;
+    transform: translateY(0);
+    transition: all 1s ease;
+    cursor: pointer;
+
+    &:hover {
+      transform: translateY(3px);
+    }
+  }
+}

@@ -25,5 +25,9 @@
         </button>
       </a>
     </div>
+
+    <div class="toggle-more">
+      <i class="fas fa-chevron-down"></i>
+    </div>
   </div>
 </section>

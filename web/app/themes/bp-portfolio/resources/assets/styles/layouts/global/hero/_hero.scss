@@ -1,4 +1,7 @@
 .hero {
+  height: 100vh;
+  background-color: $blue;
+
   @extend %hard-center;
 
   @include allHeaders {
@@ -19,6 +22,14 @@
     margin-top: 45px;
   }
 
-  height: 100vh;
-  background-color: $blue;
+  .toggle-more {
+    position: absolute;
+    bottom: 5vh;
+    right: 0;
+    width: 100%;
+
+    svg {
+      color: $black;
+    }
+  }
 }
