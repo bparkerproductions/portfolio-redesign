@@ -8,6 +8,10 @@
 
   h1 {
     margin: 0;
+
+    @include atMobile {
+      text-align: center;
+    }
   }
 
   .project-select {
@@ -16,6 +20,11 @@
 
     @include atPortrait {
       margin: 5% 0 0 0;
+    }
+
+    @include atMobile {
+      display: flex;
+      justify-content: center;
     }
 
     .project-col {
@@ -27,6 +36,11 @@
       width: 75px;
       cursor: pointer;
       transition: all 0.5s ease;
+
+      @include atMobile {
+        padding: 5px;
+        background-color: transparent;
+      }
 
       &:hover {
         background-color: $black;
@@ -43,6 +57,14 @@
         color: $blue;
         font-size: 1.5em;
         margin-bottom: 5px;
+      }
+
+      span,
+      i,
+      svg {
+        @include atMobile {
+          color: $shade-black;
+        }
       }
     }
   }

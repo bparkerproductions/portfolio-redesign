@@ -3,15 +3,12 @@
   flex-wrap: wrap;
   border-top: 1px solid rgba($bg-grey, 0.5);
   padding-top: 30px;
-
-  @include atLaptop {
-    justify-content: center;
-  }
+  justify-content: space-between;
 
   .project {
     width: 30%;
     position: relative;
-    margin: 0 3.2% 5% 0;
+    margin-bottom: 5%;
     transition: all 0.5s ease;
     transform: translateY(0);
 
@@ -24,7 +21,7 @@
     }
 
     @include atPortrait {
-      width: 80%;
+      width: 100%;
       margin-bottom: $spacer-medium;
     }
 

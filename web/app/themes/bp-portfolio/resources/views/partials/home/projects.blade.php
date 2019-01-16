@@ -49,7 +49,7 @@
 
     <div class="button-container">
       <a href="{{$projects_btn_link}}">
-        <button class="button black large">
+        <button class="button black medium">
           {{$projects_btn_text}}
           <i class="fas fa-caret-right"></i>
         </button>

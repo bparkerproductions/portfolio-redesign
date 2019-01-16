@@ -24,6 +24,10 @@
   @extend %btn-size-large;
 }
 
+button.medium {
+  @extend %btn-size-normal-plus;
+}
+
 .button.small {
   @extend %btn-size-small;
 }
