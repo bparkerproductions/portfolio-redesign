@@ -14,4 +14,7 @@
 
   {{-- Projects Section --}}
   @include('partials.home.projects')
+
+  {{-- Testimonials Section --}}
+  @include('partials.home.testimonials')
 @endsection
