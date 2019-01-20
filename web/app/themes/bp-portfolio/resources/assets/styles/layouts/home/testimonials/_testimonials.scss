@@ -1,0 +1,22 @@
+.testimonials {
+  background-color: rgba($bg-grey, 0.35);
+
+  .inner-container {
+    @extend %column-center;
+  }
+
+  .testimonial-container {
+    width: 85%;
+    display: flex;
+
+    @import "toggles";
+
+    .testimonial {
+      background-color: $blue;
+      padding: 35px 35px 20px 35px;
+
+      @import "content";
+      @import "client-info";
+    }
+  }
+}

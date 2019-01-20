@@ -1,0 +1,19 @@
+.next,
+.previous {
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  transition: all 0.5s ease;
+
+  &:hover {
+    background-color: rgba($bg-grey, 0.75);
+    cursor: pointer;
+  }
+
+  i,
+  svg {
+    font-size: 3em;
+    color: $shade-black;
+    cursor: pointer;
+  }
+}
