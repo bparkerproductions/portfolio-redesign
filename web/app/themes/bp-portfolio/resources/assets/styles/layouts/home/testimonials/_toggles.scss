@@ -5,6 +5,10 @@
   align-items: center;
   transition: all 0.5s ease;
 
+  @include atMobile {
+    display: none;
+  }
+
   &:hover {
     background-color: rgba($bg-grey, 0.75);
     cursor: pointer;
@@ -15,5 +19,9 @@
     font-size: 3em;
     color: $shade-black;
     cursor: pointer;
+
+    @include atTablet {
+      font-size: 2em;
+    }
   }
 }

@@ -7,12 +7,24 @@
     svg {
       font-size: 2em;
       color: rgba($white, 0.75);
+
+      @include atPortrait {
+        font-size: 1.5em;
+      }
+
+      @include atTiny {
+        font-size: 1.25em;
+      }
     }
   }
 
   .right-quote-container {
     display: flex;
     align-items: flex-end;
+
+    @include atMobile {
+      display: none;
+    }
   }
 
   p {
@@ -21,5 +33,10 @@
     line-height: 1.5;
     padding: 0 30px;
     position: relative;
+
+    @include atPortrait {
+      font-size: 0.95em;
+      padding: 0 15px;
+    }
   }
 }

@@ -9,11 +9,19 @@
     width: 85%;
     display: flex;
 
+    @include atTablet {
+      width: 100%;
+    }
+
     @import "toggles";
 
     .testimonial {
       background-color: $blue;
       padding: 35px 35px 20px 35px;
+
+      @include atMobile {
+        padding: 15px 15px 5px 15px;
+      }
 
       @import "content";
       @import "client-info";
