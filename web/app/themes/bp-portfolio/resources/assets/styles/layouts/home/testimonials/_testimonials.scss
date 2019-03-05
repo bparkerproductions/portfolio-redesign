@@ -7,20 +7,34 @@
     display: flex;
     position: relative;
     background-color: $blue;
+    justify-content: center;
 
     @include atTablet {
       @include column-center;
+
+      width: 100%;
     }
 
-    @include atTablet {
-      width: 100%;
+    @include atMobile {
+      height: auto;
     }
 
     .testimonial {
       @import "content";
       @import "client-info";
 
+      @include hard-center;
+
       padding: 35px 35px 20px 35px;
+      justify-content: center;
+
+      &:not(.active) {
+        display: none;
+      }
+
+      @include atLaptopAndUp {
+        padding-right: 75px;
+      }
 
       @include atLaptop {
         @include column-center;
@@ -30,10 +44,7 @@
 
       @include atMobile {
         width: 90%;
-      }
-
-      @include atMobile {
-        padding: 15px 15px 5px 15px;
+        padding: 30px;
       }
     }
   }

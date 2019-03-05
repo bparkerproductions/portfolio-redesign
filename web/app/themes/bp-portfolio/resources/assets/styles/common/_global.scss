@@ -66,10 +66,10 @@ button,
 
 /* Inner Containers */
 .inner-container {
-  width: 85%;
+  width: 80%;
   max-width: 1200px;
 
-  @include atMobile {
+  @include atTablet {
     width: 90%;
   }
 }

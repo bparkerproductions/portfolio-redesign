@@ -4,7 +4,7 @@
     <div class="testimonial-container">
 
     {{-- Previous Toggle --}}
-      <div class="previous">
+      <div class="previous toggle">
         <i class="fas fa-chevron-left"></i>
       </div>
 
@@ -16,12 +16,9 @@
               <i class="fas fa-quote-left"></i>
             </div>
             <div class="inner-content">
-              <p>
+              <p class="{{$testimonial['classes']}}">
                 {!! $testimonial['text']!!}
               </p>
-            </div>
-            <div class="right-quote-container">
-              <i class="fas fa-quote-right"></i>
             </div>
           </div>
           <div class="client-info">
@@ -44,7 +41,7 @@
       @endforeach
 
       {{-- Next Toggle --}}
-      <div class="next">
+      <div class="next toggle">
         <i class="fas fa-chevron-right"></i>
       </div>
     </div>

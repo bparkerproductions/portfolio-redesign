@@ -21,7 +21,7 @@
     padding-left: 7.5px;
   }
 
-  &:hover {
+  @include onHover {
     background-color: rgba($bg-grey, 0.75);
     cursor: pointer;
   }
