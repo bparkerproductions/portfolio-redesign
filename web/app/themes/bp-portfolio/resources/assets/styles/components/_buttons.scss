@@ -1,6 +1,6 @@
 .button {
-  @extend %btn-size-normal;
-  @extend %hard-center-no-column;
+  @include btn-size-normal;
+  @include hard-center-no-column;
 
   text-transform: uppercase;
   border: 0;
@@ -21,15 +21,15 @@
 
 /* Sizes */
 .button.large {
-  @extend %btn-size-large;
+  @include btn-size-large;
 }
 
-button.medium {
-  @extend %btn-size-normal-plus;
+.button.medium {
+  @include btn-size-normal-plus;
 }
 
 .button.small {
-  @extend %btn-size-small;
+  @include btn-size-small;
 }
 
 /* Colors */

@@ -32,7 +32,7 @@
               </span>
             </p>
 
-            <a class="client-company" 
+            <a class="client-company"
             href="{{$testimonial['company']}}">
               <i class="fas fa-briefcase"></i>
               <span class="link">

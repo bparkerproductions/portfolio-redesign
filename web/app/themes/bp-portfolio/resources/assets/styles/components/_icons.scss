@@ -1,6 +1,6 @@
 /* Default styles for pagination and general toggling */
 .toggle-more {
-  @extend %hard-center;
+  @include hard-center;
 
   i,
   svg {

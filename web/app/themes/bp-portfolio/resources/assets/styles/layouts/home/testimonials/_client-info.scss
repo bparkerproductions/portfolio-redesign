@@ -1,8 +1,9 @@
 .client-info {
   display: flex;
   align-items: center;
-  margin-top: 30px;
+  margin: 30px 0 0 115px;
   border-top: 1px solid rgba($white, 0.1);
+  width: 100%;
 
   .client-name,
   .client-company {

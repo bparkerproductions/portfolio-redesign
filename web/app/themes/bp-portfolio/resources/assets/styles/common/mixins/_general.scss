@@ -3,6 +3,8 @@
 @import "media-query";
 @import "spacer";
 @import "text";
+@import "buttons";
+@import "flex";
 
 /* General APP Mixins */
 @mixin scrollbar($color, $size) {

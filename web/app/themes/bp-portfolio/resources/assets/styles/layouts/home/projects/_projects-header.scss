@@ -28,7 +28,7 @@
     }
 
     .project-col {
-      @extend %column-center;
+      @include column-center;
 
       background-color: $shade-black;
       padding: 10px 15px;

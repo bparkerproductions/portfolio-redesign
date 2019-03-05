@@ -1,12 +1,24 @@
+.next { right: 0; }
+.previous { left: 0; }
+
 .next,
 .previous {
-  padding: 25px;
+  padding-right: 25px;
+  padding-left: 25px;
   display: flex;
   align-items: center;
   transition: all 0.5s ease;
 
+  @include atTablet {
+    height: 100%;
+    position: absolute;
+    padding-right: 12.5px;
+    padding-left: 12.5px;
+  }
+
   @include atMobile {
-    display: none;
+    padding-right: 7.5px;
+    padding-left: 7.5px;
   }
 
   &:hover {

@@ -17,6 +17,6 @@ trait FrontPageHero {
   }
 
   public function heroButtonText() {
-    return get_field("home_hero_button")['title'];
+    return get_field("home_hero_button_text");
   }
 }

@@ -1,20 +1,20 @@
-%btn-size-normal {
+@mixin btn-size-normal {
   padding: 12.5px 35px;
   font-size: 1em;
 }
 
-%btn-size-normal-plus {
+@mixin btn-size-normal-plus {
   padding: 17px 40px;
   font-size: 1em;
 }
 
-%btn-size-large {
+@mixin btn-size-large {
   width: 250px;
   padding: 22.5px;
   font-size: 1.1em;
 }
 
-%btn-size-small {
+@mixin btn-size-small {
   padding: 10px;
   font-size: 0.9em;
 }

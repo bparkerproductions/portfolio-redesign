@@ -2,7 +2,7 @@
   height: 100vh;
   background-color: $blue;
 
-  @extend %hard-center;
+  @include hard-center;
 
   @include allHeaders {
     text-align: center;
