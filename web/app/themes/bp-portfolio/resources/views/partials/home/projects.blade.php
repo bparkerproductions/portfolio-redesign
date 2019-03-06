@@ -6,6 +6,6 @@
       </h1>
     </div>
 
-    {{-- @include('partials.home.projects-section') --}}
+    @include('partials.home.projects-section')
   </div>
 </section>

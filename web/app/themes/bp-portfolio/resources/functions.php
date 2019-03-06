@@ -68,7 +68,7 @@ array_map(function ($file) use ($sage_error) {
     if (!locate_template($file, true, true)) {
         $sage_error(sprintf(__('Error locating <code>%s</code> for inclusion.', 'sage'), $file), 'File not found');
     }
-}, ['helpers', 'setup', 'filters', 'admin']);
+}, ['helpers', 'setup', 'filters', 'admin', 'post-types']);
 
 /**
  * Here's what's happening with these hooks:
@@ -100,3 +100,19 @@ Container::getInstance()
             'view' => require dirname(__DIR__).'/config/view.php',
         ]);
     }, true);
+
+/* CUSTOM post types */
+function create_post_type() {
+    register_post_type( 'projects',
+        [
+        'labels' => [
+            'name' => __( 'Projects' ),
+            'singular_name' => __( 'Project' )
+        ],
+        'public' => true,
+        'has_archive' => true,
+        ]
+    );
+}
+
+add_action( 'init', 'create_post_type' );

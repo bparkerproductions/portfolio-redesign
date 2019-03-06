@@ -1,28 +1,31 @@
 <div class="projects-section">
+  @foreach($all_projects as $id)
+    <div class="project">
+      <div class="header-container">
+        <h4 class="white">
+          {{get_field('title', $id)}}
+        </h4>
+        <div class="icon-container">
+          @foreach(get_field('tech', $id) as $tech)
+            <i class="{{$tech['icon']}}"></i>
+          @endforeach
+        </div>
+      </div>
+      <div class="image-container">
+        <img src="{{get_field('image', $id)}}">
 
-  {{-- Loop through each project in every category --}}
-  @foreach($project_categories as $category)
-
-    @if($category['projects'])
-      @foreach($category['projects'] as $project)
-        <div class="project">
-          <div class="header-container">
-            <h4 class="white">
-              {{$project['title']}}
-            </h4>
-            <div class="icon-container">
-              @foreach($project['tech'] as $tech)
-                <i class="{{$tech['icon']}}"></i>
-              @endforeach
-            </div>
-          </div>
-          <div class="image-container">
-            <a href="{{$project['link']}}">
-              <img src="{{$project['image']}}">
+        <div role="toggle" class="project-info">
+          <div class="link-container">
+            <a href="{{get_field('link', $id)}}">
+              <i class="fas fa-external-link-alt"></i>
+              <span class="link-text">See Site</span>
             </a>
           </div>
+          <div class="description">
+            <p>{{get_field('description', $id)}}</p>
+          </div>
         </div>
-      @endforeach
-    @endif
+      </div>
+    </div>
   @endforeach
 </div>

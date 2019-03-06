@@ -69,7 +69,7 @@ button,
   width: 80%;
   max-width: 1200px;
 
-  @include atTablet {
+  @include atLaptop {
     width: 90%;
   }
 }

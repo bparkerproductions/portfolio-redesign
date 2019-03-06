@@ -7,7 +7,7 @@ trait FrontPageProjects {
     return get_field("projects_title");
   }
 
-  public function projectCategories() {
-    return get_field("project_categories");
+  public function allProjects() {
+    return get_field("all_projects");
   }
 }
