@@ -1,5 +1,10 @@
 .primary-navigation {
+  @import "toggle-container";
+  @import "navbar-scrolled";
+
   .primary-content {
+    @import "content-container";
+
     padding: 35px 0 25px 0;
     position: absolute;
     display: flex;
@@ -29,10 +34,5 @@
         transform: translateY(0);
       }
     }
-
-    @import "content-container";
   }
-
-  @import "toggle-container";
-  @import "navbar-scrolled";
 }
