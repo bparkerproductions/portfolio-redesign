@@ -10,4 +10,12 @@ trait FrontPageProjects {
   public function allProjects() {
     return get_field("all_projects");
   }
+
+  public function bottomLinkText() {
+    return get_field("bottom_link")["title"];
+  }
+
+  public function bottomLink() {
+    return get_field("bottom_link")["url"];
+  }
 }

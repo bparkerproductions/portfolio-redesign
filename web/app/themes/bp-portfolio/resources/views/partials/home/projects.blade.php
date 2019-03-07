@@ -7,5 +7,13 @@
     </div>
 
     @include('partials.home.projects-section')
+
+    <div class="bottom-link-container">
+      <a class="link black"
+         href="{{$bottom_link}}">
+        <i class="fas fa-arrow-right"></i>
+        {{$bottom_link_text}}
+      </a>
+    </div>
   </div>
 </section>

@@ -1,4 +1,14 @@
 .projects {
   @import "projects-header";
   @import "projects-section";
+
+  .bottom-link-container {
+    padding-top: 15px;
+    border-top: 1px solid $bg-grey;
+    font-size: 1.25em;
+
+    svg {
+      margin-right: 5px;
+    }
+  }
 }

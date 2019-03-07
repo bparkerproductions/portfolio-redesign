@@ -1,0 +1,50 @@
+.project {
+  position: relative;
+  padding: $spacer-small 0;
+  transition: all 0.5s ease;
+  transform: translateY(0);
+  flex-basis: 45%;
+
+  &:hover {
+    transform: translateY(-1px);
+  }
+
+  @include atTablet {
+    flex-basis: 100%;
+    padding: $spacer-medium 0;
+    border-bottom: 1px solid rgba($black, 0.5);
+
+    &:last-child {
+      border: none;
+    }
+  }
+
+  .header-container {
+    padding: 10px 0;
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    text-align: center;
+    background-color: rgba($blue, 0.85);
+    border-bottom: 1px solid rgba($black, 0.5);
+
+    @include column-center;
+
+    .icon-container {
+      margin-top: 10px;
+
+      i,
+      svg {
+        color: $black;
+        font-size: 1.2em;
+        margin: 0 3.5px;
+      }
+    }
+
+    h4 {
+      margin: 0;
+      margin-bottom: 12px;
+      width: 90%;
+    }
+  }
+}
