@@ -1,0 +1,16 @@
+.archive-header {
+  background-color: $blue;
+  padding: $spacer-large 0 $spacer-medium 0;
+  border-bottom: 1px solid rgba($shade-black, 0.2);
+
+  @include allHeaders {
+    color: $white;
+    margin-bottom: 20px;
+  }
+
+  .link-container a {
+    color: $shade-black;
+    font-weight: 700;
+    text-decoration: underline;
+  }
+}
