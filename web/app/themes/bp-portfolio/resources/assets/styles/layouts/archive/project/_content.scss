@@ -1,0 +1,11 @@
+.project-content {
+  @include allHeaders {
+    margin-bottom: 10px;
+  }
+
+  p {
+    color: $para;
+    font-size: 1.1em;
+    line-height: 1.35;
+  }
+}

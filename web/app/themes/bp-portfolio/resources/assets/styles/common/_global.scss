@@ -59,11 +59,6 @@ button,
   @include font("Lato");
 }
 
-/* Global Spacer */
-.spacer {
-  @include spacer;
-}
-
 /* Inner Containers */
 .inner-container {
   width: 80%;

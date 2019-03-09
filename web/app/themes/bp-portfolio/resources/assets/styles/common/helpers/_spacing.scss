@@ -1,0 +1,12 @@
+/* Global Spacer */
+.spacer {
+  @include spacer;
+}
+
+.spacer-small {
+  @include spacer-small;
+}
+
+.mb-bottom {
+  @include mb-bottom;
+}

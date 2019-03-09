@@ -10,3 +10,15 @@
     padding: $spacer-medium 0;
   }
 }
+
+@mixin spacer-small() {
+  padding: $spacer-small 0;
+}
+
+@mixin mb-bottom() {
+  margin-bottom: $spacer-medium;
+
+  @include atTablet() {
+    margin-bottom: $spacer-small;
+  }
+}

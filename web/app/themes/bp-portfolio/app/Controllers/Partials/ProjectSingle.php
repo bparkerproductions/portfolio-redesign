@@ -18,4 +18,16 @@ trait ProjectSingle {
   public function projectLogo() {
     return get_field("logo_preview", get_the_ID());
   }
+
+  public function projectOverview() {
+    return get_field("overview", get_the_ID());
+  }
+
+  public function projectProcess() {
+    return get_field("process", get_the_ID());
+  }
+
+  public function projectTechnologies() {
+    return get_field("technologies", get_the_ID());
+  }
 }
