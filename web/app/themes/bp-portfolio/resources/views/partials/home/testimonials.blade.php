@@ -16,8 +16,8 @@
               <i class="fas fa-quote-left"></i>
             </div>
             <div class="inner-content">
-              <p class="{{$testimonial['classes']}}">
-                {!! $testimonial['text']!!}
+              <p class="{{get_field('classes', $testimonial)}}">
+                {!! get_field('text', $testimonial) !!}
               </p>
             </div>
           </div>
@@ -25,12 +25,12 @@
             <p class="client-name">
               <i class="fas fa-user"></i>
               <span class="text">
-                {{$testimonial['name']}}
+                {{get_field('name', $testimonial)}}
               </span>
             </p>
 
             <a class="client-company"
-            href="{{$testimonial['company']}}">
+            href="{{get_field('company', $testimonial)}}">
               <i class="fas fa-briefcase"></i>
               <span class="link">
                 Website
