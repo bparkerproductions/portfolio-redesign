@@ -1,11 +1,23 @@
 .project-content {
-  @include allHeaders {
-    margin-bottom: 10px;
-  }
+  .content-section {
+    border-bottom: 1px solid rgba($shade-black, 0.15);
 
-  p {
-    color: $para;
-    font-size: 1.1em;
-    line-height: 1.35;
+    &:first-child {
+      padding-top: 0;
+    }
+
+    &:last-child {
+      border: none;
+    }
+
+    @include allHeaders {
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: $para;
+      font-size: 1.1em;
+      line-height: 1.5;
+    }
   }
 }

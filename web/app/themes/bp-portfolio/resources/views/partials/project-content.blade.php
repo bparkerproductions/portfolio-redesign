@@ -14,7 +14,7 @@
     </div>
 
     {{-- Technologies --}}
-    <div class="content-section mb-bottom">
+    <div class="content-section spacer-small">
       <h1 class="blue">Technologies Used</h1>
       {!!$project_technologies!!}
     </div>
