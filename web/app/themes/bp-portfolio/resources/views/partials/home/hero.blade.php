@@ -2,7 +2,7 @@
   <div class="inner-container">
     <div class="social-media">
       @foreach($social_media as $icon)
-        <a class="{{$icon['link']}}">
+        <a href="{{$icon['link']}}">
           <i class="{{$icon['class']}}"></i>
         </a>
       @endforeach
@@ -19,7 +19,7 @@
 
     <div class="button-container hard-center">
       <a>
-        <button class="button large black projects-button">
+        <button class="button large black rotate projects-button">
           {{$hero_button_text}}
           <i class="fas fa-caret-right"></i>
         </button>

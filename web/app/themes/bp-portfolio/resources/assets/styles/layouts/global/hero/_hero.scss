@@ -11,7 +11,7 @@
   }
 
   h1 {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 
     @include atMobileAndUp {
       font-size: $header-extra-large;
@@ -19,7 +19,7 @@
   }
 
   .button-container {
-    margin-top: 45px;
+    margin-top: $spacer-large;
   }
 
   .toggle-more {

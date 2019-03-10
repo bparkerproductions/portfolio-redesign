@@ -8,5 +8,9 @@
     color: $shade-black;
     font-size: 3em;
     margin: 0 15px;
+
+    @include onHover {
+      color: $white;
+    }
   }
 }
