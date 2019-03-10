@@ -1,4 +1,4 @@
-<section class="spacer column-center projects">
+<section id="projects-container" class="spacer column-center projects">
   <div class="inner-container">
     <div class="projects-section-header">
       <h1 class="blue">

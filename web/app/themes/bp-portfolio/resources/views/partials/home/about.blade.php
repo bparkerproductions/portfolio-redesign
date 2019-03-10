@@ -1,4 +1,4 @@
-<section class="column-center spacer about-section">
+<section id="about-container" class="column-center spacer about-section">
   <div class="inner-container">
     <div class="content-container">
       <h1 class="blue">
@@ -26,7 +26,7 @@
         @foreach($technologies as $tech)
           <i class="{{$tech['icon']}}"></i>
         @endforeach
-      </div>      
+      </div>
     </div>
   </div>
 </section>

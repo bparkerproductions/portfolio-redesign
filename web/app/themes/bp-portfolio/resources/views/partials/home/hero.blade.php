@@ -18,15 +18,15 @@
     </div>
 
     <div class="button-container hard-center">
-      <a href="{{$hero_button_url}}">
-        <button class="button large black">
+      <a>
+        <button class="button large black projects-button">
           {{$hero_button_text}}
           <i class="fas fa-caret-right"></i>
         </button>
       </a>
     </div>
 
-    <div class="toggle-more">
+    <div class="toggle-more goto-about-me">
       <i class="fas fa-chevron-down"></i>
     </div>
   </div>
