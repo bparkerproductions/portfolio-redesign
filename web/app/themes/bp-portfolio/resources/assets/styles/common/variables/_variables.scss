@@ -6,3 +6,8 @@
 @import "sizes";
 @import "breakpoints";
 @import "text-sizes";
+
+//inner container global
+$inner-container-large: 80%;
+$inner-container-laptop: 90%;
+$max-width: 1200px;

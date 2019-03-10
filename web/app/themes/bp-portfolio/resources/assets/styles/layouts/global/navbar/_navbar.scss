@@ -1,23 +1,18 @@
 .primary-navigation {
   @import "toggle-container";
-  @import "navbar-scrolled";
 
   .primary-content {
     @import "content-container";
+    @import "navbar-scrolled";
 
     padding: 35px 0 25px 0;
     position: absolute;
     display: flex;
-    transition: all 0.5s ease;
     z-index: 10;
-    -webkit-clip-path: polygon(0% 0%, 300% 0%, 0% 100%, 0% 100%);
-    clip-path: polygon(0% 0%, 300% 0%, 0% 100%, 0% 100%);
-
-    @include atTablet {
-      justify-content: center;
-    }
 
     @include atMobile {
+      transition: all 0.5s ease;
+      border-bottom: 1px solid rgba($black, 0.5);
       justify-content: space-between;
       width: 100%;
     }

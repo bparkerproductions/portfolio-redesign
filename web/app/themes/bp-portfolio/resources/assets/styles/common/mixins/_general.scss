@@ -37,10 +37,11 @@
   }
 }
 
-@mixin onHover {
-  &:hover {
-    @include atTabletAndUp {
-      @content;
-    }
+@mixin inner-container {
+  width: $inner-container-large;
+  max-width: $max-width;
+
+  @include atLaptop {
+    width: $inner-container-laptop;
   }
 }

@@ -20,4 +20,20 @@
       line-height: 1.5;
     }
   }
+
+  #project-testimonial {
+    .testimonial-container {
+      background-color: transparent;
+    }
+
+    .testimonials {
+      align-items: flex-start;
+    }
+
+    svg,
+    p,
+    span {
+      color: $shade-black;
+    }
+  }
 }

@@ -87,3 +87,11 @@
     @content;
   }
 }
+
+@mixin onHover {
+  &:hover {
+    @include atTabletAndUp {
+      @content;
+    }
+  }
+}

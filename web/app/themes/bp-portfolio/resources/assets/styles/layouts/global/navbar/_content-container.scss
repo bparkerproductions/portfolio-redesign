@@ -1,8 +1,4 @@
 .content-container {
-  @include atMobile {
-    padding: 35px 0 55px 0;
-  }
-
   transition: all 0.5s ease;
 
   ul {

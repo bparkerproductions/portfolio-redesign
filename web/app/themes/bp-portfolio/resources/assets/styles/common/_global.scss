@@ -61,10 +61,5 @@ button,
 
 /* Inner Containers */
 .inner-container {
-  width: 80%;
-  max-width: 1200px;
-
-  @include atLaptop {
-    width: 90%;
-  }
+  @include inner-container;
 }

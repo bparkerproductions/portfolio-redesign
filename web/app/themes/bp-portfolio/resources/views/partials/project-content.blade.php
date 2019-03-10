@@ -13,6 +13,13 @@
       {!!$project_process!!}
     </div>
 
+    {{-- Show Testimonial If there is one --}}
+    <div id="project-testimonial">
+      @include('partials.home.testimonials', [
+        'testimonials' => $testimonials
+      ])
+    </div>
+
     {{-- Technologies --}}
     <div class="content-section spacer-small">
       <h1 class="blue">Technologies Used</h1>
