@@ -1,9 +1,9 @@
 .primary-navigation {
   @import "toggle-container";
+  @import "navbar-scrolled";
 
   .primary-content {
     @import "content-container";
-    @import "navbar-scrolled";
 
     padding: 35px 0 25px 0;
     position: absolute;
