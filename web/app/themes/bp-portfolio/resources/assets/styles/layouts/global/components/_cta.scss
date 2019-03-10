@@ -1,0 +1,59 @@
+.cta {
+  background-color: $black;
+
+  .social-media {
+    svg {
+      color: $white;
+      font-size: 2em;
+      margin: 0 5px;
+    }
+  }
+
+  .social-media,
+  h2,
+  .link-container {
+    margin: 0;
+
+    @include atMobileAndUp {
+      padding: 0 12.5px;
+      border-right: 1px solid $white;
+    }
+
+    @include atMobile {
+      margin: 10px 0;
+    }
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      border: 0;
+    }
+  }
+
+  .header-container {
+    display: flex;
+    align-items: flex-end;
+
+    @include atMobile {
+      flex-wrap: wrap;
+    }
+
+    h2 {
+      @include atMobile {
+        width: 100%;
+      }
+    }
+
+    .link-container {
+      a {
+        text-decoration: underline;
+      }
+
+      @include atMobile {
+        margin-left: 12.5px !important;
+      }
+    }
+  }
+}
