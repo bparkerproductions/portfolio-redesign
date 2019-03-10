@@ -4,14 +4,22 @@ namespace App\Controllers\Partials;
 
 trait GlobalOptions {
   public function socialMedia() {
-    return get_field('social_media', 'option');
+    return get_field("social_media", "option");
   }
 
   public function ctaHeader() {
-    return get_field('cta_header', 'option');
+    return get_field("cta_header", "option");
   }
 
   public function ctaEmailLink() {
-    return get_field('cta_email_link', 'option');
+    return get_field("cta_email_link", "option");
+  }
+
+  public function footerLists() {
+    return get_field("footer_lists", "option");
+  }
+
+  public function copyrightText() {
+    return get_field("copyright_text", "option");
   }
 }
