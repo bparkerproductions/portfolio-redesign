@@ -14,11 +14,13 @@
     </div>
 
     {{-- Show Testimonial If there is one --}}
-    <div id="project-testimonial">
-      @include('partials.home.testimonials', [
-        'testimonials' => $testimonials
-      ])
-    </div>
+    @if($testimonials)
+      <div id="project-testimonial">
+        @include('partials.home.testimonials', [
+          'testimonials' => $testimonials
+        ])
+      </div>
+    @endif
 
     {{-- Technologies --}}
     <div class="content-section spacer-small">

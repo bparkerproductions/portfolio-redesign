@@ -17,4 +17,7 @@
 
   {{-- Testimonials Section --}}
   @include('partials.home.testimonials')
+
+  {{-- CTA Section --}}
+  @include('partials.global.cta')
 @endsection

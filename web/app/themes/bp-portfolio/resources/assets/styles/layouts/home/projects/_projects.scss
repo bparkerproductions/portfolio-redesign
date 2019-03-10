@@ -6,6 +6,12 @@
     padding-top: 15px;
     border-top: 1px solid $bg-grey;
     font-size: 1.25em;
+    display: flex;
+    flex-direction: column;
+
+    a {
+      margin: 5px 0;
+    }
 
     svg {
       margin-right: 5px;

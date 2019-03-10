@@ -14,6 +14,11 @@
         <i class="fas fa-arrow-right"></i>
         {{$bottom_link_text}}
       </a>
+      <a class="link black"
+         href="{{$site_link}}">
+        <i class="fas fa-arrow-right"></i>
+        {{$site_link_text}}
+      </a>
     </div>
   </div>
 </section>

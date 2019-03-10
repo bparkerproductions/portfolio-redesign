@@ -18,4 +18,12 @@ trait FrontPageProjects {
   public function bottomLink() {
     return get_field("bottom_link")["url"];
   }
+
+  public function siteLinkText() {
+    return get_field("site_link")["title"];
+  }
+
+  public function siteLink() {
+    return get_field("site_link")["url"];
+  }
 }
