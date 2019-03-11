@@ -5,17 +5,32 @@
   border-top: 1px solid rgba($white, 0.1);
   width: 100%;
 
+  @include atMobile {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   .client-name,
-  .client-company {
+  .client-company,
+  .project-link {
     color: $white;
 
-    .link {
+    @include atMobile {
+      margin-bottom: 10px;
+    }
+
+    .link,
+    .text {
       margin-left: 4px;
+    }
+
+    .link {
       text-decoration: underline;
     }
   }
 
-  .client-name {
+  .client-name,
+  .client-company {
     margin-right: 15px;
   }
 }
