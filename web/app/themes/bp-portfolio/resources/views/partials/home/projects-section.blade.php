@@ -17,10 +17,12 @@
 
           <div role="toggle" class="project-info">
             <div class="link-container">
-              <a href="{{get_field('link', $id)}}">
-                <i class="fas fa-external-link-alt"></i>
-                <span class="link-text">See Site</span>
-              </a>
+              @if(get_field('link', $id))
+                <a href="{{get_field('link', $id)}}">
+                  <i class="fas fa-external-link-alt"></i>
+                  <span class="link-text">See Site</span>
+                </a>
+              @endif
             </div>
             <div class="description">
               <p>{{get_field('description', $id)}}</p>

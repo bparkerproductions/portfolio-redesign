@@ -3,6 +3,7 @@
 
   .testimonial-container {
     @import "toggles";
+    @import "single-testimonial";
 
     display: flex;
     position: relative;
@@ -17,35 +18,6 @@
 
     @include atMobile {
       height: auto;
-    }
-
-    .testimonial {
-      @import "content";
-      @import "client-info";
-
-      @include hard-center;
-
-      padding: 35px 35px 20px 35px;
-      justify-content: center;
-
-      &:not(.active) {
-        display: none;
-      }
-
-      @include atLaptopAndUp {
-        padding-right: 75px;
-      }
-
-      @include atLaptop {
-        @include column-center;
-
-        width: 80%;
-      }
-
-      @include atMobile {
-        width: 90%;
-        padding: 30px;
-      }
     }
   }
 }

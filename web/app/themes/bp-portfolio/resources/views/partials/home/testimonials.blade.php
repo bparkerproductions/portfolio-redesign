@@ -21,22 +21,7 @@
               </p>
             </div>
           </div>
-          <div class="client-info">
-            <p class="client-name">
-              <i class="fas fa-user"></i>
-              <span class="text">
-                {{get_field('name', $testimonial)}}
-              </span>
-            </p>
-
-            <a class="client-company"
-            href="{{get_field('company', $testimonial)}}">
-              <i class="fas fa-briefcase"></i>
-              <span class="link">
-                Website
-              </span>
-            </a>
-          </div>
+          @include('partials.home.client-info')
         </div>
       @endforeach
 
