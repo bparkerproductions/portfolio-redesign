@@ -1,5 +1,5 @@
-<section class="project-content column-center spacer">
-  <div class="inner-container">
+<section class="project-content column-center">
+  <div class="inner-container spacer">
 
     {{-- Overview --}}
     <div class="content-section spacer-small">
@@ -25,6 +25,11 @@
     {{-- Technologies --}}
     <div class="content-section spacer-small">
       <h1 class="blue">Technologies Used</h1>
+      <div class="icon-container">
+        @foreach($tech_list as $tech)
+          <i class="{{$tech['icon']}}"></i>
+        @endforeach
+      </div>
       {!!$project_technologies!!}
     </div>
   </div>

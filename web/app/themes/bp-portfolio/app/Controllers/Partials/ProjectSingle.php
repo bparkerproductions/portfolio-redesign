@@ -30,4 +30,8 @@ trait ProjectSingle {
   public function projectTechnologies() {
     return get_field("technologies", get_the_ID());
   }
+
+  public function techList() {
+    return get_field('tech', get_the_ID());
+  }
 }
