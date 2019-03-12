@@ -8,9 +8,18 @@
     margin-bottom: 20px;
   }
 
-  .link-container a {
-    color: $shade-black;
-    font-weight: 700;
-    text-decoration: underline;
+  .subtitle-container {
+    margin-top: $spacer-small;
+
+    a {
+      color: $shade-black;
+      font-weight: 700;
+      text-decoration: underline;
+    }
+
+    @include allHeaders {
+      color: $black;
+      font-weight: 400;
+    }
   }
 }

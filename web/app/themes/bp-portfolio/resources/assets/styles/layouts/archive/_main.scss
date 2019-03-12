@@ -1,9 +1,11 @@
+//general
+@import "archive";
+@import "formatting";
+
+//hero and headers
 @import "archive-header";
 
 //project parts
 @import "project/head";
 @import "project/content";
-
-//other
-@import "formatting";
 

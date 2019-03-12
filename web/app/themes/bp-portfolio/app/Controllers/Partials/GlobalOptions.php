@@ -22,4 +22,8 @@ trait GlobalOptions {
   public function copyrightText() {
     return get_field("copyright_text", "option");
   }
+
+  public function blogDescription() {
+    return get_field("blog_description", "option");
+  }
 }
