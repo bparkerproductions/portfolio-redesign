@@ -1,6 +1,21 @@
-.page-template-archive {
+.archive {
   article.post {
-    @include spacer-small;
+    border-bottom: 1px solid rgba($black, 0.5);
+
+    @include spacer;
+
+    @include allHeaders {
+      margin-bottom: 0;
+    }
+
+    .entry-summary {
+      p {
+        margin-bottom: 0;
+        color: $para;
+        line-height: 1.5;
+        font-size: 1.1em;
+      }
+    }
   }
 }
 

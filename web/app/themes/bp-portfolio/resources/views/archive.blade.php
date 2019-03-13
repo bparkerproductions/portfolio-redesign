@@ -17,7 +17,7 @@
     {!! get_search_form(false) !!}
   @endif
 
-  <div class="entry-content spacer">
+  <div class="entry-content spacer-small">
     @while ($loop_object->have_posts())
       @php $loop_object->the_post() @endphp
       <div class="column-center">
