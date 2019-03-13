@@ -10,4 +10,8 @@ class Single extends Controller {
   public function testimonials() {
     return get_field("testimonial");
   }
+
+  public function blogLink() {
+    return get_page_link(get_page_by_title('Blog')->ID);
+  }
 }

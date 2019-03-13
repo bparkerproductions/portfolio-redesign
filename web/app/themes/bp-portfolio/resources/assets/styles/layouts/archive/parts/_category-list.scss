@@ -1,0 +1,29 @@
+.archive-category-list {
+  .archive-categories {
+    display: flex;
+    flex-wrap: wrap;
+
+    .single-category {
+      background-color: $black;
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      border-right: 1px solid rgba($white, 0.25);
+      transition: all 0.5s ease;
+
+      @include atTablet {
+        border: 1px solid rgba($white, 0.25);
+      }
+
+      &:hover {
+        background-color: $shade-black;
+      }
+
+      a {
+        color: $white;
+        text-align: center;
+        padding: 20px;
+      }
+    }
+  }
+}

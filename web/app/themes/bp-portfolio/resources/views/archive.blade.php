@@ -10,21 +10,15 @@
     <h3>{{$blog_description}}</h3>
   @endcomponent
 
-  @if (!$post_query->have_posts())
-    <div class="alert alert-warning">
-      {{ __('Sorry, no results were found.', 'sage') }}
-    </div>
-    {!! get_search_form(false) !!}
-  @endif
+  @include('partials.category-list')
 
   <div class="entry-content spacer-small">
-    @while ($loop_object->have_posts())
-      @php $loop_object->the_post() @endphp
-      <div class="column-center">
-        <div class="inner-container">
+    <div class="column-center">
+      <div class="inner-container">
+        @while(have_posts()) @php the_post() @endphp
           @include('partials.content-'.get_post_type())
-        </div>
+        @endwhile
       </div>
-    @endwhile
+    </div>
   </div>
 @endsection

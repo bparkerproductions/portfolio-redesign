@@ -12,6 +12,11 @@
       @endif
 
     @endcomponent
-    @include('partials.content-single-'.get_post_type())
+
+    <div class="column-center spacer">
+     <div class="inner-container entry-content">
+       @include('partials.content-single-'.get_post_type())
+     </div>
+    </div>
   @endwhile
 @endsection

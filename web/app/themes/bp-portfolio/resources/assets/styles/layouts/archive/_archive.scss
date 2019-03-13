@@ -1,6 +1,15 @@
-.archive {
+.archive,
+.blog {
   article.post {
     border-bottom: 1px solid rgba($black, 0.5);
+
+    &:first-of-type {
+      padding-top: 0;
+    }
+
+    &:last-of-type {
+      border-bottom: none;
+    }
 
     @include spacer;
 

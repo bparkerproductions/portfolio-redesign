@@ -2,10 +2,11 @@
 @import "archive";
 @import "archive-content";
 @import "formatting";
-@import "entry-meta";
+@import "parts/entry-meta";
+@import "parts/category-list";
 
 //hero and headers
-@import "archive-header";
+@import "parts/archive-header";
 
 //project parts
 @import "project/head";
