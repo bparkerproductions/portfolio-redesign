@@ -1,8 +1,6 @@
-/* General styles shared across blogs, projects, and so on */
-.project-content {
-  a {
-    color: $blue;
-    text-decoration: underline;
+.page-template-archive {
+  article.post {
+    @include spacer-small;
   }
 }
 

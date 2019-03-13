@@ -3,3 +3,6 @@
 
 {{-- Include Project Content --}}
 @include('partials.project-content')
+
+{{-- CTA Section --}}
+@include('partials.global.cta')

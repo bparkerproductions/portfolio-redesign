@@ -1,0 +1,17 @@
+/* General styles shared across blogs, projects, and so on */
+
+.project-content,
+.entry-content {
+  a {
+    color: $blue;
+    text-decoration: underline;
+  }
+
+  @include allHeaders {
+    color: $blue;
+
+    a {
+      text-decoration: none;
+    }
+  }
+}

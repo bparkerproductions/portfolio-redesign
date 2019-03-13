@@ -1,0 +1,49 @@
+.entry-meta {
+  display: flex;
+  margin-bottom: 12.5px;
+
+  @include atMobile {
+    flex-direction: column;
+  }
+
+  .categories {
+    a {
+      text-decoration: none;
+      padding-right: 5px;
+
+      &::after {
+        content: "-";
+        margin-left: 5px;
+        color: $shade-black;
+      }
+
+      &:last-child::after {
+        display: none;
+      }
+    }
+  }
+
+  time,
+  .categories {
+    padding: 0 12.5px;
+    border-right: 1px solid rgba($black, 0.25);
+
+    @include atMobile {
+      padding: 0;
+      margin-bottom: 10px;
+      border: none;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    &:first-child {
+      padding-left: 0;
+    }
+
+    &:last-child {
+      border-right: none;
+    }
+  }
+}

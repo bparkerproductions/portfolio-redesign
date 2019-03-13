@@ -33,7 +33,4 @@
       {!!$project_technologies!!}
     </div>
   </div>
-
-  {{-- CTA Section --}}
-  @include('partials.global.cta')
 </section>
