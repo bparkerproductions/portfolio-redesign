@@ -12,13 +12,12 @@
     margin-top: $spacer-small;
 
     a {
-      color: $shade-black;
+      color: $white;
       font-weight: 700;
       text-decoration: underline;
     }
 
     @include allHeaders {
-      color: $black;
       font-weight: 400;
     }
   }

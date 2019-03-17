@@ -8,10 +8,14 @@
   @include atTablet {
     flex-basis: 100%;
     padding: $spacer-medium 0;
-    border-bottom: 1px solid rgba($black, 0.5);
+    border-bottom: 1px solid rgba($black, 0.15);
 
     &:last-child {
       border: none;
+    }
+
+    &:first-child {
+      padding-top: 0;
     }
   }
 

@@ -8,13 +8,8 @@
           See {!!APP::title()!!} Live
         </a>
       @endif
-
     @endcomponent
 
-    <div class="column-center spacer">
-     <div class="inner-container entry-content">
-       @include('partials.content-single-'.get_post_type())
-     </div>
-    </div>
+    @include('partials.content-single-'.get_post_type())
   @endwhile
 @endsection
