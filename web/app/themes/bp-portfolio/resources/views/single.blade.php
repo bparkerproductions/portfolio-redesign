@@ -7,8 +7,6 @@
         <a href="{{$project_link}}">
           See {!!APP::title()!!} Live
         </a>
-      @else
-        {{$blog_description}}
       @endif
 
     @endcomponent

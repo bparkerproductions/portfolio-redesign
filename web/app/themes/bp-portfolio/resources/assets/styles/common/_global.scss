@@ -21,6 +21,10 @@ body {
 
 h1 {
   font-size: $header1-size;
+
+  @include atMobile {
+    font-size: $header2-size;
+  }
 }
 
 h2 {

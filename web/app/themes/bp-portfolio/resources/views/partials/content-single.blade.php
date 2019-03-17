@@ -1,7 +1,10 @@
 <article @php post_class() @endphp>
   <header>
     @include('partials/entry-meta')
-    <h1 class="entry-title blue">{!! get_the_title() !!}</h1>
+
+    <div class="image-container">
+      {!! get_the_post_thumbnail() !!}
+    </div>
   </header>
   <div class="entry-content">
     @php the_content() @endphp
