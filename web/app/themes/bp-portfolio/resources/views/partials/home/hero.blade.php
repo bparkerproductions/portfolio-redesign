@@ -9,7 +9,7 @@
     </div>
 
     <div class="content-container">
-      <h1 class="bold">
+      <h1 data-lax-preset="spin fadeInOut" class="bold">
         {{$hero_title}}
       </h1>
       <h3 class="light">

@@ -4,6 +4,11 @@
 
   @include hard-center;
 
+  @include atMobile {
+    justify-content: flex-start;
+    padding-top: $spacer-larger;
+  }
+
   @include allHeaders {
     text-align: center;
     color: $white;
@@ -19,7 +24,7 @@
   }
 
   .button-container {
-    margin-top: $spacer-large;
+    @include mt-medium;
   }
 
   .toggle-more {
@@ -28,8 +33,13 @@
     right: 0;
     width: 100%;
 
+    @include atMobile {
+      bottom: 2vh;
+    }
+
     svg {
       color: $black;
+      margin-bottom: 10px;
     }
   }
 }

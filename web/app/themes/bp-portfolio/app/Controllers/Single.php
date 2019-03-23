@@ -6,6 +6,7 @@ use Sober\Controller\Controller;
 
 class Single extends Controller {
   use Partials\ProjectSingle;
+  use Partials\SocialShare;
 
   public function testimonials() {
     return get_field("testimonial");

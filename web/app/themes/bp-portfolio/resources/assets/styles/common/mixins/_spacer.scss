@@ -15,10 +15,19 @@
   padding: $spacer-small 0;
 }
 
-@mixin mb-bottom() {
+@mixin mt-medium() {
+  margin-top: $spacer-medium;
+
+  @include atTablet() {
+    margin-top: $spacer-small;
+  }
+}
+
+@mixin mb-medium() {
   margin-bottom: $spacer-medium;
 
   @include atTablet() {
     margin-bottom: $spacer-small;
   }
 }
+

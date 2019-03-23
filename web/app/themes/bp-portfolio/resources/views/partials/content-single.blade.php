@@ -1,5 +1,7 @@
 <div class="column-center spacer">
   <div class="inner-container entry-content">
+    @include('partials.global.social-share')
+
     <article @php post_class() @endphp>
       <header>
         @include('partials/entry-meta')
