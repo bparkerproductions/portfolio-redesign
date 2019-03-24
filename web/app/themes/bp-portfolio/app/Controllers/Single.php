@@ -6,9 +6,10 @@ use Sober\Controller\Controller;
 
 class Single extends Controller {
   use Partials\ProjectSingle;
+  use Partials\Comments;
 
   public function testimonials() {
-    return get_field("testimonial");
+    return get_field('testimonial');
   }
 
   public function blogLink() {
