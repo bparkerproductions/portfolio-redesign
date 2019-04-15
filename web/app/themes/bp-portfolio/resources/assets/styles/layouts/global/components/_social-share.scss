@@ -5,6 +5,8 @@
   background-color: rgba($bg-grey, 0.5);
   padding: 15px 10px;
   z-index: 1;
+  top: 45vh;
+  transition: all 1s ease;
 
   @include atLaptop {
     right: 5%;
@@ -15,6 +17,10 @@
     padding: 0;
     background-color: transparent;
     bottom: 0;
+  }
+
+  &.scrolled {
+    top: 12.5vh;
   }
 
   .icon-container {

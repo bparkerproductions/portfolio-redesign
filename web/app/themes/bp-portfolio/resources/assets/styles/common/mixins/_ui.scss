@@ -1,0 +1,30 @@
+/* General APP Mixins */
+@mixin scrollbar($color, $size) {
+  &::-webkit-scrollbar {
+    width: $size;
+    height: $size;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: $color;
+  }
+}
+
+//creates colors bullet points on lists
+@mixin color-bullets($color) {
+  list-style: none;
+
+  li {
+    padding-left: 1em;
+    position: relative;
+
+    &::before {
+      content: "• ";
+      color: $color;
+      font-size: 15px;
+      position: absolute;
+      top: 1px;
+      left: 0;
+    }
+  }
+}

@@ -1,3 +1,5 @@
+import scroll from './scroll';
+
 export default {
   init() {
     $('.toggle-container').on('click', this.toggleNav);
@@ -10,14 +12,6 @@ export default {
     $content.toggleClass('active');
   },
   navScroll() {
-    let scroll = $(document).scrollTop();
-    let $navbar = $('.primary-content');
-
-    if(scroll > 100) {
-      $navbar.addClass('scrolled');
-    }
-    else {
-      $navbar.removeClass('scrolled');
-    }
+    scroll.addClassOnScroll('.primary-content', 120);
   },
 }

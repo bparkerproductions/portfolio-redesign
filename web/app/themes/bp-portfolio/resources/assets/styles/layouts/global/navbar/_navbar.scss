@@ -9,6 +9,7 @@
     position: absolute;
     display: flex;
     z-index: 10;
+    background-color: transparent;
 
     @include atMobile {
       transition: all 0.5s ease;
