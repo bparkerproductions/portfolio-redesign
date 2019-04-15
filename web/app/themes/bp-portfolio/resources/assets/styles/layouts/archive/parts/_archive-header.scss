@@ -1,16 +1,18 @@
 .archive-header {
   background-color: $blue;
-  padding: $spacer-large 0 $spacer-medium 0;
+  padding: $spacer-larger 0 $spacer-medium 0;
   border-bottom: 1px solid rgba($shade-black, 0.2);
 
   @include allHeaders {
     color: $white;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+  }
+
+  p {
+    color: $white;
   }
 
   .subtitle-container {
-    margin-top: $spacer-small;
-
     a {
       color: $white;
       font-weight: 700;

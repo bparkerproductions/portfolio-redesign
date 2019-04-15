@@ -3,7 +3,7 @@
 @section('content')
   {{-- Single Project Head --}}
   @component('components.header')
-    <h3>{{$blog_description}}</h3>
+    <p>{{$blog_description}}</p>
   @endcomponent
 
   @include('partials.category-list')
