@@ -1,0 +1,45 @@
+.technologies-container {
+  @include atTabletAndUp {
+    width: 40%;
+  }
+
+  .tech-header {
+    margin-left: 15px;
+  }
+
+  .technologies {
+    display: flex;
+    flex-wrap: wrap;
+
+    .tech-col {
+      flex-basis: 25%;
+      margin-bottom: 20px;
+
+      @include hard-center;
+
+      @include atTablet {
+        flex-basis: 12.5%;
+      }
+
+      @include atMobile {
+        flex-basis: 25%;
+      }
+
+      @include atTiny {
+        flex-basis: 33%;
+      }
+
+      .tech-label {
+        text-align: center;
+        font-size: 15px;
+      }
+
+      i,
+      svg {
+        color: $shade-black;
+        font-size: 3em;
+        margin-bottom: 7.5px;
+      }
+    }
+  }
+}

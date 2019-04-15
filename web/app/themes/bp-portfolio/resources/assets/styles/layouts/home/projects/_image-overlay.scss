@@ -3,6 +3,8 @@
   background-color: $black;
   height: 400px;
 
+  @extend %image-border;
+
   .project-info {
     position: absolute;
     top: 30%;
