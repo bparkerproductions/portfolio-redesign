@@ -5,6 +5,8 @@ namespace App\Controllers;
 use Sober\Controller\Controller;
 
 class App extends Controller {
+    use Partials\GlobalOptions;
+
     public function siteName() {
       return get_bloginfo('name');
     }
@@ -28,16 +30,14 @@ class App extends Controller {
       return get_the_title();
     }
 
+    public static function IsActive($page) {
+      return is_page($page) ? "active" : "";
+    }
+
     public function primaryNavItems() {
       $menuLocations = get_nav_menu_locations();
       $menuID = $menuLocations['primary_navigation'];
 
       return wp_get_nav_menu_items($menuID);
     }
-
-    public static function IsActive($page) {
-      return is_page($page) ? "active" : "";
-    }
-
-    use Partials\GlobalOptions;
 }

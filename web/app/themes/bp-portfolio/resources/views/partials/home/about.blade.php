@@ -8,19 +8,10 @@
         <p class="para">
           {!!$about_desc!!}
         </p>
-
-        <div class="button-container">
-          <a href="{{$about_btn_link}}">
-            <button class="button black">
-              {{$about_btn_text}}
-              <i class="fas fa-caret-right"></i>
-            </button>
-          </a>
-        </div>
       </div>
 
       <div class="technologies-container">
-        <h2 class="blue tech-header">{{$tech_header}}</h2>
+        <h3 class="blue tech-header">{{$tech_header}}</h3>
         <div class="technologies">
           @foreach($technologies as $tech)
             <div class="tech-col">
@@ -32,6 +23,15 @@
       </div>
     </div>
 
+    @include('partials.global.info-rows')
 
+    <div class="button-container">
+      <a href="{{$about_btn_link}}">
+        <button class="button black">
+          {{$about_btn_text}}
+          <i class="fas fa-caret-right"></i>
+        </button>
+      </a>
+    </div>
   </div>
 </section>

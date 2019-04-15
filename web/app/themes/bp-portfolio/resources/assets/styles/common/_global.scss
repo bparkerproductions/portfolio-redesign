@@ -1,8 +1,6 @@
 body {
   @include font-smoothing;
   @include font("Open Sans");
-
-  font-size: 16px;
 }
 
 /* Headers */
@@ -19,38 +17,9 @@ body {
   letter-spacing: 0.5px;
 }
 
-h1 {
-  font-size: $header1-size;
-
-  @include atMobile {
-    font-size: $header2-size;
-  }
-}
-
-h2 {
-  font-size: $header2-size;
-}
-
-h3 {
-  font-size: $header3-size;
-}
-
-h4 {
-  font-size: $header4-size;
-}
-
-h5 {
-  font-size: $header5-size;
-}
-
-h6 {
-  font-size: $header6-size;
-}
-
-.para {
+p {
   color: $para;
   line-height: 1.5;
-  font-size: 1.1em;
 }
 
 /* Various Text Elements */

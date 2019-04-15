@@ -17,10 +17,6 @@
 
   h1 {
     margin-bottom: 10px;
-
-    @include atMobileAndUp {
-      font-size: $header-extra-large;
-    }
   }
 
   .button-container {

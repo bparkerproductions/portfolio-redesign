@@ -12,9 +12,7 @@
       <h1 data-lax-preset="spin fadeInOut" class="bold">
         {{$hero_title}}
       </h1>
-      <h3 class="light">
-        {{$hero_subtitle}}
-      </h3>
+      <h4 class="light">{{$hero_subtitle}}</h4>
     </div>
 
     <div class="button-container hard-center">
