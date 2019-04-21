@@ -10,6 +10,6 @@ class FrontPage extends Controller {
   use Partials\FrontPageProjects;
 
   public function testimonials() {
-    return get_field("testimonials");
+    return get_field('testimonials');
   }
 }

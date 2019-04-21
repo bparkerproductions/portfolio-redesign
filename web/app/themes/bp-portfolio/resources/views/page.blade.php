@@ -3,7 +3,7 @@
 @section('content')
   @while(have_posts()) @php the_post() @endphp
     @component('components.header')
-      <h3>Learn more about me and how I can help you</h3>
+      <p>Learn more about me and how I can help you</p>
     @endcomponent
     <article class="column-center spacer">
       <div class="inner-container page-content entry-content">

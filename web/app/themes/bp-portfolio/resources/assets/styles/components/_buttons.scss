@@ -53,3 +53,14 @@
     }
   }
 }
+
+.button.border {
+  background-color: transparent;
+  border: 3px solid $white;
+  font-weight: 400;
+
+  &:hover {
+    background-color: $white;
+    color: $black;
+  }
+}

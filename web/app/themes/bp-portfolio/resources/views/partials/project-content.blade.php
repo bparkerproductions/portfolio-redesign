@@ -3,13 +3,18 @@
 
     {{-- Overview --}}
     <div class="content-section spacer-small">
-      <h1 class="blue">Project Overview</h1>
+      <h2 class="blue">Project Overview</h2>
       {!!$project_overview!!}
     </div>
 
+    {{-- Image Gallery --}}
+    @if($gallery)
+      @include('partials.global.image-gallery')
+    @endif
+
     {{-- Process --}}
     <div class="content-section spacer-small">
-      <h1 class="blue">Process</h1>
+      <h2 class="blue">Process</h2>
       {!!$project_process!!}
     </div>
 
@@ -24,7 +29,7 @@
 
     {{-- Technologies --}}
     <div class="content-section spacer-small">
-      <h1 class="blue">Technologies Used</h1>
+      <h2 class="blue">Technologies Used</h2>
       <div class="icon-container">
         @foreach($tech_list as $tech)
           <i class="{{$tech['icon']}}"></i>

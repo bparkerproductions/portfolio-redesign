@@ -8,6 +8,15 @@
         <p class="para">
           {!!$about_desc!!}
         </p>
+
+        <div class="button-container">
+          <a href="{{$about_btn_link}}">
+            <button class="button black">
+              {{$about_btn_text}}
+              <i class="fas fa-caret-right"></i>
+            </button>
+          </a>
+        </div>
       </div>
 
       <div class="technologies-container">
@@ -22,16 +31,7 @@
         </div>
       </div>
     </div>
-
-    @include('partials.global.info-rows')
-
-    <div class="button-container">
-      <a href="{{$about_btn_link}}">
-        <button class="button black">
-          {{$about_btn_text}}
-          <i class="fas fa-caret-right"></i>
-        </button>
-      </a>
-    </div>
   </div>
+
+  @include('partials.global.about-rows')
 </section>

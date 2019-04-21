@@ -13,10 +13,13 @@
   h2,
   .link-container {
     margin: 0;
+    display: flex;
+    align-items: flex-end;
 
     @include atMobileAndUp {
       padding: 0 12.5px;
       border-right: 1px solid $white;
+      height: 40px;
     }
 
     @include atMobile {
@@ -41,6 +44,8 @@
     }
 
     h2 {
+      line-height: 1;
+
       @include atMobile {
         width: 100%;
       }

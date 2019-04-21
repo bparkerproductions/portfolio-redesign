@@ -1,7 +1,9 @@
 .about-section {
   background-color: rgba($bg-grey, 0.5);
+  padding-bottom: 0;
 
   @import "technologies";
+  @import "about-rows";
 
   h1 {
     margin-bottom: 10px;
@@ -10,6 +12,8 @@
   .top-row {
     display: flex;
     justify-content: space-between;
+
+    @include mb-custom(50px, 30px);
 
     @include atTablet {
       flex-direction: column;

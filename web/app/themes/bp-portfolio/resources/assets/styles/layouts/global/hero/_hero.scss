@@ -6,7 +6,7 @@
 
   @include atMobile {
     justify-content: flex-start;
-    padding-top: $spacer-larger;
+    padding-top: $spacer-large;
   }
 
   @include allHeaders {
@@ -30,7 +30,7 @@
     width: 100%;
 
     @include atMobile {
-      bottom: 2vh;
+      display: none;
     }
 
     svg {

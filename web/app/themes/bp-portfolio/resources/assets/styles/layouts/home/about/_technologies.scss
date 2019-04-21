@@ -4,12 +4,18 @@
   }
 
   .tech-header {
-    margin-left: 15px;
+    @include atTabletAndUp {
+      margin-left: 15px;
+    }
   }
 
   .technologies {
     display: flex;
     flex-wrap: wrap;
+
+    @include atTablet {
+      margin-left: -15px;
+    }
 
     .tech-col {
       flex-basis: 25%;

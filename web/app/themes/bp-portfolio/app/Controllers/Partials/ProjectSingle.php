@@ -34,4 +34,16 @@ trait ProjectSingle {
   public function techList() {
     return get_field('tech', get_the_ID());
   }
+
+  public function galleryTitle() {
+    return get_field('gallery_title', get_the_ID());
+  }
+
+  public function galleryDesc() {
+    return get_field('gallery_description', get_the_ID());
+  }
+
+  public function gallery() {
+    return get_field('gallery', get_the_ID());
+  }
 }

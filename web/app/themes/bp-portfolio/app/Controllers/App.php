@@ -31,7 +31,7 @@ class App extends Controller {
     }
 
     public static function IsActive($page) {
-      return is_page($page) ? "active" : "";
+      return is_page($page) ? 'active' : '';
     }
 
     public function primaryNavItems() {

@@ -46,6 +46,12 @@
       background-color: transparent;
     }
 
+    .previous {
+      @include atMobile {
+        display: none;
+      }
+    }
+
     .testimonials {
       align-items: flex-start;
       padding: 30px 0;
