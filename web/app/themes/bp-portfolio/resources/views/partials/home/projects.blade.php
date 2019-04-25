@@ -6,7 +6,11 @@
       </h1>
     </div>
 
-    @include('partials.home.projects-section')
+    <div class="projects-section">
+      @foreach($all_projects as $id)
+        @include('partials.global.project-preview')
+      @endforeach
+    </div>
 
     <div class="bottom-link-container">
       <a class="link black"
