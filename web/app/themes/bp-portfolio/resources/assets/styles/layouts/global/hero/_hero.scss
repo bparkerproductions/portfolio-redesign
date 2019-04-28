@@ -2,11 +2,14 @@
   height: 100vh;
   background-color: $blue;
 
+  @import "hero-cards";
+
   @include hard-center;
 
   @include atMobile {
     justify-content: flex-start;
     padding-top: $spacer-large;
+    height: 100%;
   }
 
   @include allHeaders {
@@ -17,10 +20,6 @@
 
   h1 {
     margin-bottom: 20px;
-  }
-
-  .button-container {
-    @include mt-custom(120px, 35px);
   }
 
   .toggle-more {

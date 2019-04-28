@@ -21,4 +21,10 @@
       margin-right: 5px;
     }
   }
+
+  .bottom-button-container {
+    display: flex;
+
+    @include mt-custom(35px, 20px);
+  }
 }

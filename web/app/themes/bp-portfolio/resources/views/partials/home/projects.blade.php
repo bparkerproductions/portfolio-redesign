@@ -13,15 +13,22 @@
     </div>
 
     <div class="bottom-link-container">
-      <a class="link black"
-         href="{{$bottom_link}}">
+      <a class="link black" href="{{$bottom_link}}">
         <i class="fas fa-arrow-right"></i>
         {{$bottom_link_text}}
       </a>
-      <a class="link black"
-         href="{{$site_link}}">
+      <a class="link black" href="{{$site_link}}">
         <i class="fas fa-arrow-right"></i>
         {{$site_link_text}}
+      </a>
+    </div>
+
+    <div class="bottom-button-container">
+      <a href="{{$projects_link}}">
+        <button class="button large black">
+          {{$projects_link_text}}
+          <i class="fas fa-caret-right"></i>
+        </button>
       </a>
     </div>
   </div>

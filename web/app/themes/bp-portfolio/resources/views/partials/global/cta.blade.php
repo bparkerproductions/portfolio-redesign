@@ -5,9 +5,11 @@
       <div class="social-media">
         <div class="cta-social-media">
           @foreach($social_media as $icon)
-            <a href="{{$icon['link']}}">
-              <i class="{{$icon['class']}} white"></i>
-            </a>
+            @if($icon['is_cta'])
+              <a href="{{$icon['link']}}">
+                <i class="{{$icon['class']}} white"></i>
+              </a>
+            @endif
           @endforeach
         </div>
       </div>
