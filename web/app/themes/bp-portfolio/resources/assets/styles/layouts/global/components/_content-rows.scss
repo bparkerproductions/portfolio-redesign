@@ -1,8 +1,11 @@
 .content-rows {
   width: 100%;
 
+  @include hard-center;
+
   .content-row {
     padding: 75px 0;
+    width: 100vw;
 
     .inner-container {
       display: flex;

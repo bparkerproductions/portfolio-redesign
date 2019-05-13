@@ -1,25 +1,25 @@
 <section class="content-rows">
-  @foreach($content_rows as $row)
+  <?php foreach(get_field('content_rows') as $row) { ?>
     <div class="content-row column-center">
       <div class="inner-container">
         <div class="header-container">
-          <h2 class="row-title">{{$row['title']}}</h2>
+          <h2 class="row-title"><?= $row['title'] ?></h2>
         </div>
         <div class="row-content-container">
-          {!! $row['blurb'] !!}
+          <?= $row['blurb'] ?>
 
-          @if($row['button'])
+          <?php if($row['button']) { ?>
             <div class="button-container">
-              <a href="{{$row['button']['url']}}"
-                target="{{$row['button']['target']}}">
+              <a href="<?= $row['button']['url'] ?>"
+                target="<?= $row['button']['target'] ?>">
                 <button class="button border white">
-                  {{$row['button']['title']}}
+                  <?= $row['button']['title'] ?>
                 </button>
               </a>
             </div>
-          @endif
+          <?php } ?>
         </div>
       </div>
     </div>
-  @endforeach
+  <?php } ?>
 </section>

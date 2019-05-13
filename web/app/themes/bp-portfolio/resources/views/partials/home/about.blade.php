@@ -2,12 +2,8 @@
   <div class="inner-container">
     <div class="top-row">
       <div class="content-container">
-        <h1 class="blue">
-          {{$about_title}}
-        </h1>
-        <p class="para">
-          {!!$about_desc!!}
-        </p>
+        <h1 class="blue">{{$about_title}}</h1>
+        <p class="para">{!!$about_desc!!}</p>
 
         <div class="button-container">
           <a href="{{$about_btn_link}}">
@@ -33,5 +29,5 @@
     </div>
   </div>
 
-  @include('partials.global.content-rows')
+  @include('blocks.content-rows')
 </section>

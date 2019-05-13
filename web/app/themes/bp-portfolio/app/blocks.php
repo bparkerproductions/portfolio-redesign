@@ -1,20 +1,20 @@
 <?php
 
-function register_acf_block_types() {
+function acf_register_content_rows() {
 
   // register a testimonial block.
   acf_register_block_type(array(
-      'name'              => 'testimonial',
-      'title'             => __('Testimonial'),
-      'description'       => __('A custom testimonial block.'),
-      'render_template'   => 'template-parts/blocks/testimonial/testimonial.php',
+      'name'              => 'Content Rows',
+      'title'             => __('Content Rows'),
+      'description'       => __('A content row block'),
+      'render_template'   => 'views/blocks/content-rows.php',
       'category'          => 'formatting',
       'icon'              => 'admin-comments',
-      'keywords'          => array( 'testimonial', 'quote' ),
+      'keywords'          => array( 'content', 'rows' ),
   ));
 }
 
 // Check if function exists and hook into setup.
 if( function_exists('acf_register_block_type') ) {
-  add_action('acf/init', 'register_acf_block_types');
+  add_action('acf/init', 'acf_register_content_rows');
 }
