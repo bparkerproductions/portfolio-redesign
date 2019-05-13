@@ -1,6 +1,6 @@
-<section class="about-rows">
-  @foreach($about_rows as $row)
-    <div class="about-row column-center">
+<section class="content-rows">
+  @foreach($content_rows as $row)
+    <div class="content-row column-center">
       <div class="inner-container">
         <div class="header-container">
           <h2 class="row-title">{{$row['title']}}</h2>

@@ -6,6 +6,7 @@ use Sober\Controller\Controller;
 
 class App extends Controller {
     use Partials\GlobalOptions;
+    use Partials\GlobalFields;
 
     public function siteName() {
       return get_bloginfo('name');

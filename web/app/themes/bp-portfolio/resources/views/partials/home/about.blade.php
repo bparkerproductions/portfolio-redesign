@@ -33,5 +33,5 @@
     </div>
   </div>
 
-  @include('partials.global.about-rows')
+  @include('partials.global.content-rows')
 </section>

@@ -26,8 +26,4 @@ trait FrontPageAbout {
   public function technologies() {
     return get_field('technologies');
   }
-
-  public function aboutRows() {
-    return get_field('about_rows');
-  }
 }
