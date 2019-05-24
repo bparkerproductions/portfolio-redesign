@@ -2,10 +2,8 @@
   <div class="inner-container">
     <h3 class="black">Browse Categories</h3>
     <div class="archive-categories">
-      <div class="single-category">
-        <a class="{{$blog_active}}" href="{{$blog_link}}">
-          All Categories
-        </a>
+      <div class="single-category {{$blog_active}}">
+        <a href="{{$blog_link}}">All Categories</a>
       </div>
       @foreach($category_list as $cat)
         <div class="single-category">

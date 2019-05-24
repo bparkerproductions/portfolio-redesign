@@ -28,3 +28,17 @@ function create_testimonials_post_type() {
     );
 }
 add_action( 'init', 'create_testimonials_post_type' );
+
+function create_codesample_post_type() {
+    register_post_type( 'code_samples',
+        [
+        'labels' => [
+            'name' => __( 'Code Samples' ),
+            'singular_name' => __( 'Code Sample' )
+        ],
+        'public' => true,
+        'has_archive' => true,
+        ]
+    );
+}
+add_action( 'init', 'create_codesample_post_type' );

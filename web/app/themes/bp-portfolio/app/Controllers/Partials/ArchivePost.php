@@ -5,7 +5,8 @@ namespace App\Controllers\Partials;
 trait ArchivePost {
   public function categoryList() {
     $args = [
-      'orderby' => 'name'
+      'orderby' => 'name',
+      'parent' => 0
     ];
 
     return get_categories($args);
@@ -16,6 +17,7 @@ trait ArchivePost {
   }
 
   public function blogActive() {
-    return is_page(get_page_by_title("Blog")) ? "active" : false;
+    $page_id = get_page_by_title('Blog')->ID;
+    return is_page($page_id) ? 'active' : '';
   }
 }
