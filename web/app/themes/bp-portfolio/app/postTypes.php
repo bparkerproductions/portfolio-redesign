@@ -38,6 +38,8 @@ function create_codesample_post_type() {
         ],
         'public' => true,
         'has_archive' => true,
+        'show_in_rest' => true,
+            'supports' => ['editor']
         ]
     );
 }

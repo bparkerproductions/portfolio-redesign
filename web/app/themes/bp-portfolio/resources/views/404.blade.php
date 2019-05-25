@@ -1,12 +1,43 @@
 @extends('layouts.app')
 
 @section('content')
-  @include('partials.page-header')
+  @component('components.header')
+    <h5 class="white">
+      <a href="{{get_home_url()}}">Go Home <i class="fas fa-home"></i></a>
+    </h5>
+  @endcomponent
 
-  @if (!have_posts())
-    <div class="alert alert-warning">
-      {{ __('Sorry, but the page you were trying to view does not exist.', 'sage') }}
-    </div>
-    {!! get_search_form(false) !!}
-  @endif
+  <div id="not-found" class="column-center">
+    @if (!have_posts())
+      <div class="inner-container">
+        <h1 class="shade-black">404</h1>
+        <div class="icon-container">
+        <h3>Sorry, but the page you were trying to view does not exist.</h3>
+        <i class="fas fa-frown blue"></i>
+        </div>
+
+        <div class="link-container">
+
+          <h6>Would you like to</h6>
+          <ul>
+            <li>
+              <a class="link black" href="{{get_home_url()}}">
+                <i class="fas fa-home blue"></i> Go To Home Page?
+              </a>
+            </li>
+            <li>
+              <a class="link black" href="{{$blog_link}}">
+                <i class="fas fa-newspaper blue"></i> Go To Blog Posts?
+              </a>
+            </li>
+            <li>
+              <a class="link black" href="{{$projects_link}}">
+                <i class="fas fa-laptop-code blue"></i> Go To Personal Projects?
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    @endif
+  </div>
 @endsection

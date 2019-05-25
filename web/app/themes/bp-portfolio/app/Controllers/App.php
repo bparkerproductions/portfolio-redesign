@@ -41,4 +41,12 @@ class App extends Controller {
 
       return wp_get_nav_menu_items($menuID);
     }
+
+    public function blogLink() {
+      return get_page_link(get_page_by_title('Blog')->ID);
+    }
+
+    public function projectsLink() {
+      return get_page_link(get_page_by_title('All Projects')->ID);
+    }
 }
