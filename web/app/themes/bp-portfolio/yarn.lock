@@ -5293,6 +5293,11 @@ known-css-properties@^0.5.0:
   resolved "https://registry.yarnpkg.com/known-css-properties/-/known-css-properties-0.5.0.tgz#6ff66943ed4a5b55657ee095779a91f4536f8084"
   integrity sha512-LOS0CoS8zcZnB1EjLw4LLqDXw8nvt3AGH5dXLQP3D9O1nLLA+9GC5GnPl5mmF+JiQAtSX4VyZC7KvEtcA4kUtA==
 
+lax.js@^1.1.0:
+  version "1.2.3"
+  resolved "https://registry.yarnpkg.com/lax.js/-/lax.js-1.2.3.tgz#ee19230a20f637f6bfd77281b1aa7a8d62172ad4"
+  integrity sha512-997ORcgFcL6Hag1QBe0KbNl9WEtm7okf9fLKvo/hv05CUSWEwsyXAtZLKOqsnbgcaJ6yHZUNtJUzMaplf78Z4w==
+
 lazy-cache@^1.0.3:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/lazy-cache/-/lazy-cache-1.0.4.tgz#a1d78fc3a50474cb80845d3b3b6e1da49a446e8e"
