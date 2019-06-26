@@ -19,9 +19,17 @@
         <h3 class="blue tech-header">{{$tech_header}}</h3>
         <div class="technologies">
           @foreach($technologies as $tech)
-            <div class="tech-col">
+            @php
+              $specialize = $tech['specialize'] ? 'specialized' : '';
+            @endphp
+            <div class="tech-col {{$specialize}}">
               <i class="{{$tech['icon']}}"></i>
               <span class="tech-label">{{$tech['label']}}</span>
+              @if($specialize)
+                <div class="specialized-icon">
+                  <i class="fas fa-star"></i>
+                </div>
+              @endif
             </div>
           @endforeach
         </div>

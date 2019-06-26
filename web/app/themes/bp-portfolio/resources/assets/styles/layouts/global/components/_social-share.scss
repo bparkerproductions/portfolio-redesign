@@ -23,7 +23,8 @@
     top: 12.5vh;
 
     @include atMobile {
-      top: auto;
+      z-index: -1;
+      top: 70vh;
     }
   }
 

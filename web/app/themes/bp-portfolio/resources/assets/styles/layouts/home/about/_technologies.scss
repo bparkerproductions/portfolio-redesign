@@ -40,11 +40,27 @@
         font-size: 15px;
       }
 
-      i,
       svg {
         color: $shade-black;
         font-size: 3em;
         margin-bottom: 7.5px;
+      }
+    }
+
+    .specialized {
+      position: relative;
+
+      .tech-label,
+      svg {
+        color: $blue;
+      }
+
+      .specialized-icon {
+        @extend %icon-top-left;
+
+        svg {
+          color: $yellow;
+        }
       }
     }
   }
