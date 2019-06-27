@@ -18,8 +18,11 @@
     }
 
     li {
+      @import "parts/submenu";
+
       margin-right: 32px;
       text-transform: uppercase;
+      position: relative;
 
       @include atMobile {
         margin: 7.5px 0;
@@ -35,22 +38,32 @@
         }
       }
 
-      &:hover {
-        transition: all 0.5s ease;
-        transform: translateY(-1px);
+      &:not(.has-dropdown) {
+        transition: all 0.35s ease;
+
+        &:hover {
+          transform: translateY(-1px);
+        }
       }
 
-      .active a {
-        color: $shade-black;
-        padding-bottom: 4.5px;
+      &.active {
+        a {
+          color: $shade-black;
+          padding-bottom: 4.5px;
 
-        @include atMobileAndUp {
-          border-bottom: 2px solid $shade-black;
-        }
+          @include atMobileAndUp {
+            border-bottom: 2px solid $shade-black;
+          }
 
-        @include atMobile {
-          color: $blue;
+          @include atMobile {
+            color: $blue;
+          }
         }
+      }
+
+      &.has-dropdown:hover .submenu {
+        opacity: 1;
+        transform: translateY(0);
       }
     }
   }

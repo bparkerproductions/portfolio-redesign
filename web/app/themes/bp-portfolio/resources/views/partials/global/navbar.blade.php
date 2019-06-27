@@ -11,10 +11,18 @@
 
         {{-- Rest of the items that aren't home --}}
         @foreach($primary_nav_items as $item)
-          <li class="{{App::IsActive($item['link']['title'])}}">
+          @php
+            $is_active = App::IsActive($item['link']['title']);
+            $has_dropdown = $item['has_dropdown'] ? 'has-dropdown' : false;
+          @endphp
+
+          <li class="{{$is_active}} {{$has_dropdown}}">
             <a href="{{$item['link']['url']}}">
               {{$item['link']['title']}}
             </a>
+
+            {{-- Load submenu --}}
+            @include('partials.global.navbar-submenu')
           </li>
         @endforeach
       </ul>
