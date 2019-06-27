@@ -3,10 +3,10 @@
   @import "projects-section";
 
   .bottom-link-container {
-    padding-top: 15px;
-    border-top: 1px solid $bg-grey;
     font-size: 1.25em;
     display: flex;
+
+    @include border-top($shade-black);
 
     @include atMobile {
       flex-direction: column;

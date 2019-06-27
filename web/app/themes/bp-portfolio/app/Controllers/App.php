@@ -7,6 +7,7 @@ use Sober\Controller\Controller;
 class App extends Controller {
     use Partials\GlobalOptions;
     use Partials\GlobalFields;
+    use Partials\Navbar;
 
     public function siteName() {
       return get_bloginfo('name');
@@ -33,13 +34,6 @@ class App extends Controller {
 
     public static function IsActive($page) {
       return is_page($page) ? 'active' : '';
-    }
-
-    public function primaryNavItems() {
-      $menuLocations = get_nav_menu_locations();
-      $menuID = $menuLocations['primary_navigation'];
-
-      return wp_get_nav_menu_items($menuID);
     }
 
     public function blogLink() {

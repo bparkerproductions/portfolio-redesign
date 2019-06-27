@@ -1,20 +1,24 @@
 <section class="bg-black">
   <div class="hero lax" data-lax-translate-y="0 0, 1000 -250">
     <div class="inner-container">
-      <div class="social-media lax"
-      data-lax-translate-y="0 0, 750 -250">
-        @foreach($social_media as $icon)
-          <a href="{{$icon['link']}}">
-            <i class="{{$icon['class']}}"></i>
-          </a>
-        @endforeach
-      </div>
-
       <div class="content-container lax"
       data-lax-translate-y="0 0, 750 -250">
+
+      <div class="intro-container">
         <h1 class="lax bold">
           {{$hero_title}}
         </h1>
+
+        <div class="social-media lax"
+          data-lax-translate-y="0 0, 750 -250">
+          @foreach($social_media as $icon)
+            <a href="{{$icon['link']}}">
+              <i class="{{$icon['class']}}"></i>
+            </a>
+          @endforeach
+        </div>
+      </div>
+
         <div class="hero-cards-container">
           <div class="hero-cards">
             @foreach($hero_blurbs as $card)

@@ -28,3 +28,13 @@
     }
   }
 }
+
+@mixin border-bottom($color) {
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba($color, 0.15);
+}
+
+@mixin border-top($color) {
+  padding-top: 15px;
+  border-top: 1px solid rgba($color, 0.15);
+}

@@ -38,10 +38,11 @@ footer.footer {
   }
 
   .footer-bottom {
-    border-top: 1px solid rgba($white, 0.15);
+    @include border-top($white);
 
     p {
       color: $white;
+      margin-top: 5px;
     }
   }
 }

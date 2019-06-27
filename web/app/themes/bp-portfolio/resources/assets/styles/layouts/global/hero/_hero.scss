@@ -22,6 +22,10 @@
     margin-bottom: 20px;
   }
 
+  .intro-container {
+    @include border-bottom($shade-black);
+  }
+
   .toggle-more {
     position: absolute;
     bottom: 5vh;

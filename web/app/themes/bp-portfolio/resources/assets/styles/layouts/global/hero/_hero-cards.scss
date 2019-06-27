@@ -15,13 +15,12 @@
 
   .hero-card {
     margin: 0 35px;
-    padding-bottom: 15px;
     align-items: flex-start;
     display: flex;
     flex-direction: column;
-    border-bottom: 2px solid rgba($shade-black, 0.15);
 
     @include mt-custom(35px, 15px);
+    @include border-bottom($shade-black);
 
     @include allHeaders {
       margin: 0;
