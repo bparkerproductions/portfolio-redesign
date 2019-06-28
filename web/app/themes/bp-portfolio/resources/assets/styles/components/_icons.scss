@@ -3,7 +3,6 @@
 .toggle-more {
   @include hard-center;
 
-  i,
   svg {
     font-size: 3em;
     color: $blue;
@@ -15,5 +14,15 @@
     &:hover {
       transform: translateY(3px);
     }
+  }
+}
+
+.icon-container {
+  @include hard-center;
+
+  svg {
+    font-size: 2em;
+    margin-right: 12px;
+    color: $blue;
   }
 }

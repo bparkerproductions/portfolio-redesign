@@ -3,11 +3,14 @@
 
     <div class="content-container">
       <ul>
-        <li class="home-item {{APP::isActive('home page')}}">
-          <a href="{{$home_item['url']}}">
-            {{$home_item['title']}}
-          </a>
-        </li>
+        <div class="home-item-container">
+          <i class="{{$home_item_icon}}"></i>
+          <li class="home-item {{APP::isActive('home page')}}">
+            <a href="{{$home_item['url']}}">
+              {{$home_item['title']}}
+            </a>
+          </li>
+        </div>
 
         {{-- Rest of the items that aren't home --}}
         @foreach($primary_nav_items as $item)

@@ -1,7 +1,9 @@
-<section class="archive-category-list column-center spacer-small">
+<section class="archive-category-list column-center">
   <div class="inner-container">
-    <h3 class="black">Browse Categories</h3>
     <div class="archive-categories">
+      <div class="icon-container">
+        <i class="fas fa-folder-open"></i>
+      </div>
       <div class="single-category {{$blog_active}}">
         <a href="{{$blog_link}}">All Categories</a>
       </div>
