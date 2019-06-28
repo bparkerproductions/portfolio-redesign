@@ -1,21 +1,12 @@
 .archive,
 .blog {
   article.post {
-    border-bottom: 1px solid rgba($black, 0.5);
+    border-bottom: 6px solid $blue;
 
-    &:first-of-type {
-      padding-top: 0;
-    }
-
-    &:last-of-type {
-      border-bottom: none;
-    }
-
-    @include spacer;
+    @include mb-custom(60px, 30px);
 
     @include allHeaders {
       margin-bottom: 10px;
     }
   }
 }
-

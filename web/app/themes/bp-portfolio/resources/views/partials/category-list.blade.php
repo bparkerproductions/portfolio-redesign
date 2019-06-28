@@ -1,7 +1,7 @@
 <section class="archive-category-list column-center">
   <div class="inner-container">
     <div class="archive-categories">
-      <div class="icon-container">
+      <div class="single-icon-container">
         <i class="fas fa-folder-open"></i>
       </div>
       <div class="single-category {{$blog_active}}">

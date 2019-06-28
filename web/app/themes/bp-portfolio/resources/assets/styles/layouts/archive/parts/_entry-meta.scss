@@ -1,6 +1,9 @@
 .entry-meta {
   display: flex;
+  flex-direction: column;
   margin-bottom: 12.5px;
+
+  @include border-bottom($shade-black);
 
   @include atMobile {
     flex-direction: column;
@@ -25,8 +28,7 @@
 
   time,
   .categories {
-    padding: 0 12.5px;
-    border-right: 1px solid rgba($black, 0.25);
+    margin-top: 12.5px;
 
     @include atMobile {
       padding: 0;

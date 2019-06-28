@@ -1,0 +1,16 @@
+.posts-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  article {
+    flex-basis: 48%;
+    background-color: rgba($bg-grey, 0.5);
+    padding: 40px 35px;
+    box-sizing: border-box;
+
+    @include atMobile {
+      flex-basis: 100%;
+    }
+  }
+}
