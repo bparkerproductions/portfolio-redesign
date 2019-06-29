@@ -20,4 +20,8 @@ trait ArchivePost {
     $page_id = get_page_by_title('Blog')->ID;
     return is_page($page_id) ? 'active' : '';
   }
+
+  public function isFeatured() {
+    return get_field('featured');
+  }
 }

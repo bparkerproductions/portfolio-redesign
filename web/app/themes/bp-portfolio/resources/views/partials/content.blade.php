@@ -1,11 +1,21 @@
 <article @php post_class('col') @endphp>
-  <header>
-    @include('partials/entry-meta')
-    <h4 class="entry-title">
-      <a href="{{ get_permalink() }}">{!! get_the_title() !!}</a>
-    </h4>
-  </header>
-  <div class="entry-summary">
-    @php the_excerpt() @endphp
-  </div>
+  <section class="top-post">
+    <header>
+      @include('partials/entry-meta')
+      <div>
+      <h4 class="entry-title">
+        <a href="{{ get_permalink() }}">{!! get_the_title() !!}</a>
+      </h4>
+    </header>
+    <div class="entry-summary">
+      @php the_excerpt() @endphp
+    </div>
+  </section>
+
+  <a class="read-more-link" href="{{get_permalink()}}">
+    <div class="read-more">
+      <i class="fas fa-hand-point-right white fa-2x"></i>
+      <h3 class="read-more-text">Read Post</h3>
+    </div>
+  </a>
 </article>

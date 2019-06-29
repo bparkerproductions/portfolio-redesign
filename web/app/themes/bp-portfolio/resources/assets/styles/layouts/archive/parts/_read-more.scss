@@ -1,0 +1,29 @@
+.read-more-link {
+  background-color: $shade-black;
+  padding: 30px;
+  text-decoration: none;
+  transition: all 0.35s ease;
+
+  @include hard-center;
+
+  &:hover {
+    color: $black;
+
+    svg {
+      transform: translateX(5px);
+    }
+  }
+
+  .read-more {
+    display: flex;
+
+    svg {
+      margin-right: 15px;
+    }
+
+    .read-more-text {
+      margin: 0;
+      color: $white;
+    }
+  }
+}

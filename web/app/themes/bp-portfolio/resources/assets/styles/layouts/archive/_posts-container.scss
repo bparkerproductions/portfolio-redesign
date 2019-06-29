@@ -2,8 +2,17 @@
   @extend %layout-two-columns-break-tablet;
 
   article {
+    @import "parts/read-more";
+
     background-color: rgba($bg-grey, 0.5);
-    padding: 40px 35px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .top-post {
+      padding: 40px 35px 0 35px;
+      margin-bottom: 12.5px;
+    }
   }
 }
