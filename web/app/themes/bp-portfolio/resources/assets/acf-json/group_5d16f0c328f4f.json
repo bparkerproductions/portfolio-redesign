@@ -1,11 +1,11 @@
 {
     "key": "group_5d16f0c328f4f",
-    "title": "Posts",
+    "title": "Post Fields",
     "fields": [
         {
             "key": "field_5d16f625c4a9b",
             "label": "Featured",
-            "name": "featured",
+            "name": "is_featured",
             "type": "true_false",
             "instructions": "",
             "required": 0,
@@ -39,5 +39,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1561785926
+    "modified": 1561842075
 }
