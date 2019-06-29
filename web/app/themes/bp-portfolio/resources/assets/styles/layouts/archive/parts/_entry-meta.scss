@@ -12,12 +12,18 @@
   .categories {
     a {
       text-decoration: none;
-      padding-right: 5px;
+
+      @include atMobileAndUp {
+        padding-right: 5px;
+      }
 
       &::after {
         content: "-";
-        margin-left: 5px;
         color: $shade-black;
+
+        @include atMobileAndUp {
+          margin-left: 5px;
+        }
       }
 
       &:last-child::after {
@@ -26,26 +32,27 @@
     }
   }
 
-  time,
-  .categories {
+  .meta-col {
     margin-top: 12.5px;
+    display: flex;
+    align-items: center;
 
     @include atMobile {
       padding: 0;
       margin-bottom: 10px;
       border: none;
-
-      &:last-child {
-        margin-bottom: 0;
-      }
     }
 
-    &:first-child {
-      padding-left: 0;
+    .icon-container {
+      width: 30px;
+      margin-right: 7.5px;
     }
+  }
 
-    &:last-child {
-      border-right: none;
+  .categories,
+  time {
+    @include atMobile {
+      font-size: 0.9em;
     }
   }
 }

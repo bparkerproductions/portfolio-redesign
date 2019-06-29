@@ -11,7 +11,6 @@
   @endcomponent
 
   @include('partials.category-list')
-
   <div class="entry-content spacer-small column-center">
     <div class="inner-container">
       <div class="posts-container">

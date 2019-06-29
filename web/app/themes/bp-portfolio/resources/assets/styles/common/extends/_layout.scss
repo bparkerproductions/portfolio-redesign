@@ -1,0 +1,27 @@
+%layout-two-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .col {
+    flex-basis: 47.5%;
+
+    @include atMobile {
+      flex-basis: 100%;
+    }
+  }
+}
+
+%layout-two-columns-break-tablet {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  .col {
+    flex-basis: 47.5%;
+
+    @include atTablet {
+      flex-basis: 100%;
+    }
+  }
+}

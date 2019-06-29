@@ -20,6 +20,10 @@
     margin-top: 0;
     color: $para;
     line-height: 1.5;
+
+    @include atMobile {
+      font-size: 0.9em;
+    }
   }
 
   ul {

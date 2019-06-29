@@ -1,4 +1,4 @@
-<article @php post_class() @endphp>
+<article @php post_class('col') @endphp>
   <header>
     @include('partials/entry-meta')
     <h4 class="entry-title">
