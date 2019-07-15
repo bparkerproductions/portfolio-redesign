@@ -1,5 +1,11 @@
 <div class="project">
   <div class="project-inner">
+    @if(get_field('is_featured', $id))
+      <div class="featured-icon">
+        <i title="Featured Project" class="fas fa-star fa-lg black"></i>
+      </div>
+    @endif
+
     <div class="header-container">
       <h4 class="white">
         {{get_field('title', $id)}}
