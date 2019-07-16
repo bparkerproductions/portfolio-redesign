@@ -22,12 +22,3 @@
     margin-top: $spacer-small;
   }
 }
-
-@mixin mb-medium() {
-  margin-bottom: $spacer-medium;
-
-  @include atTablet() {
-    margin-bottom: $spacer-small;
-  }
-}
-
