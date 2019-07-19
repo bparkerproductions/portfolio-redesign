@@ -6,8 +6,10 @@
 
 @section('content')
   {{-- Single Project Head --}}
-  @component('components.header')
-    <p>{{$blog_description}}</p>
+  @component('components.header', [
+    'icon_class' => 'fas fa-pencil-alt'
+  ])
+    <p>See all {{single_cat_title()}} posts and media.</p>
   @endcomponent
 
   @include('partials.category-list')

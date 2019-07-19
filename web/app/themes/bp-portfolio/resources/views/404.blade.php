@@ -1,9 +1,13 @@
 @extends('layouts.app')
 
 @section('content')
-  @component('components.header')
+  @component('components.header', [
+    'icon_class' => false
+  ])
     <h5 class="white">
-      <a href="{{get_home_url()}}">Go Home <i class="fas fa-home"></i></a>
+      <a href="{{get_home_url()}}">
+        <i class="fas fa-lg fa-home ml-small"></i> Go Home
+     </a>
     </h5>
   @endcomponent
 

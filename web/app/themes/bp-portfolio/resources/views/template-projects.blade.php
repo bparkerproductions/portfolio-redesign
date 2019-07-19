@@ -5,7 +5,9 @@
 @extends('layouts.app')
 
 @section('content')
-  @component('components.header')
+  @component('components.header', [
+    'icon_class' => 'fas fa-file-code'
+  ])
     <p>{{$hero_description}}</p>
   @endcomponent
 

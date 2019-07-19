@@ -2,7 +2,9 @@
 
 @section('content')
   {{-- Single Project Head --}}
-  @component('components.header')
+  @component('components.header', [
+    'icon_class' => 'fas fa-newspaper'
+  ])
     <p>{{$blog_description}}</p>
   @endcomponent
 

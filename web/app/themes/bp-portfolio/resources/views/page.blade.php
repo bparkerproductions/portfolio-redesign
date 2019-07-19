@@ -2,7 +2,9 @@
 
 @section('content')
   @while(have_posts()) @php the_post() @endphp
-    @component('components.header')
+    @component('components.header', [
+      'icon_class' => false
+    ])
       <p>Learn more about me and how I can help you</p>
     @endcomponent
     <article class="column-center spacer">

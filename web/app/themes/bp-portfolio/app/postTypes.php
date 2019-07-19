@@ -29,12 +29,12 @@ function create_testimonials_post_type() {
 }
 add_action( 'init', 'create_testimonials_post_type' );
 
-function create_codesample_post_type() {
-    register_post_type( 'code_samples',
+function create_demo_post_type() {
+    register_post_type( 'demos',
         [
         'labels' => [
-            'name' => __( 'Code Samples' ),
-            'singular_name' => __( 'Code Sample' )
+            'name' => __( 'Code Demos' ),
+            'singular_name' => __( 'Code Demo' )
         ],
         'public' => true,
         'has_archive' => true,
@@ -43,4 +43,4 @@ function create_codesample_post_type() {
         ]
     );
 }
-add_action( 'init', 'create_codesample_post_type' );
+add_action( 'init', 'create_demo_post_type' );

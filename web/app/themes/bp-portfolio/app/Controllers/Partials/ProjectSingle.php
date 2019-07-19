@@ -3,6 +3,10 @@
 namespace App\Controllers\Partials;
 
 trait ProjectSingle {
+  public function projectTitle() {
+    return get_field('title', get_the_ID());
+  }
+
   public function projectLink() {
     return get_field('link', get_the_ID());
   }

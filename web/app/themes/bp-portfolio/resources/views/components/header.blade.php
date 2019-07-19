@@ -2,6 +2,11 @@
   <div class="inner-container">
     <h2>{!!APP::title()!!}</h2>
     <div class="subtitle-container">
+      @if($icon_class)
+        <div class="icon-container">
+          <i class="{{$icon_class}}"></i>
+        </div>
+      @endif
       {!! $slot !!}
     </div>
   </div>

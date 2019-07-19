@@ -14,6 +14,17 @@
   }
 
   .subtitle-container {
+    @include mt-custom(50px, 30px);
+
+    display: flex;
+    align-items: center;
+
+    .icon-container svg {
+      font-size: 2em;
+      margin-right: 15px;
+      color: $faded-blue;
+    }
+
     a {
       color: $white;
       font-weight: 700;
