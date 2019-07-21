@@ -2,14 +2,7 @@
   @import "content-section";
 
   .icon-container {
-    padding-bottom: 12.5px;
-    margin-bottom: 12.5px;
-    border-bottom: 1px solid rgba($black, 0.05);
-
-    svg {
-      font-size: 2em;
-      margin: 0 5px;
-    }
+    @extend %inline-icons;
   }
 
   #project-testimonial {
