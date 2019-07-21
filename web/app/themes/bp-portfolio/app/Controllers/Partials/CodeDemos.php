@@ -10,4 +10,8 @@ trait CodeDemos {
   public function technologiesList() {
     return get_field('technologies_list', get_the_ID());
   }
+
+  public function relatedMedia() {
+    return get_field('related_media', get_the_ID());
+  }
 }

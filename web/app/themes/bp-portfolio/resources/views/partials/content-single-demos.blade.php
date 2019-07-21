@@ -1,10 +1,14 @@
 <div class="column-center spacer">
   <div class="inner-container entry-content">
-    <div class="entry-meta">
-      @foreach($technologies_list as $tech)
-        <i class="{{$tech['icon']}}"></i>
-      @endforeach
-    </div>
+    @include('partials.global.tech-list', [
+      'technology_list' => $technologies_list,
+      'classes' => ''
+    ])
+
     @php the_content(); @endphp
+
+    @include('partials.global.related-media', [
+      'related_media' => $related_media
+    ])
   </div>
 </div>
