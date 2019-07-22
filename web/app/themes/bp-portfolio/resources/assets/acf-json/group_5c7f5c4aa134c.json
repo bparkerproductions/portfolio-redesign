@@ -156,6 +156,25 @@
             "ui_off_text": ""
         },
         {
+            "key": "field_5d350f50ad272",
+            "label": "Related Description",
+            "name": "related_description",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_5c8216c931ba4",
             "label": "Detail",
             "name": "",
@@ -474,5 +493,5 @@
     ],
     "active": 1,
     "description": "",
-    "modified": 1563173670
+    "modified": 1563758440
 }

@@ -7,6 +7,10 @@ trait ProjectSingle {
     return get_field('title', get_the_ID());
   }
 
+  public function relatedDescription() {
+    return get_field('related_description', get_the_ID());
+  }
+
   public function projectLink() {
     return get_field('link', get_the_ID());
   }

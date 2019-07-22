@@ -25,3 +25,26 @@
     }
   }
 }
+
+%layout-four-columns {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  .col {
+    flex-basis: 24%;
+    max-width: 24%;
+    margin: 0 1%;
+
+    @include atTablet {
+      flex-basis: 48%;
+      max-width: 48%;
+      margin: 12.5px 0;
+    }
+
+    @include atMobile {
+      flex-basis: 100%;
+      max-width: 100%;
+    }
+  }
+}
