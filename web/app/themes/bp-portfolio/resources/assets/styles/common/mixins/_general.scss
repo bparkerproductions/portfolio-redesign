@@ -6,12 +6,8 @@
 @import "buttons";
 @import "flex";
 @import "ui";
-@import "type";
-@import "spacer/bottom";
-@import "spacer/right";
-@import "spacer/top";
-@import "spacer/left";
-@import "spacer/spacer-general";
+@import "width-height";
+@import "spacer/main";
 
 @mixin inner-container {
   width: $inner-container-large;

@@ -14,4 +14,8 @@ trait CodeDemos {
   public function relatedMedia() {
     return get_field('related_media', get_the_ID());
   }
+
+  public function demoImage() {
+    return get_field('demo', get_the_ID());
+  }
 }

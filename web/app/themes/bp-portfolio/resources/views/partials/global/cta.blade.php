@@ -2,7 +2,7 @@
   <div class="inner-container">
     <div class="header-container">
       <h2 class="white">{{$cta_header}}</h2>
-      <div class="social-media">
+      {{-- <div class="social-media">
         <div class="cta-social-media">
           @foreach($social_media as $icon)
             @if($icon['is_cta'])
@@ -12,10 +12,12 @@
             @endif
           @endforeach
         </div>
-      </div>
+      </div> --}}
 
       <div class="link-container">
-        <a href="mailto:{{$cta_email_link}}" class="white">Email</a>
+        <a href="https://www.upwork.com/freelancers/~01069214b17875a221" class="white">
+          Reach me on Upwork
+        </a>
       </div>
     </div>
   </div>

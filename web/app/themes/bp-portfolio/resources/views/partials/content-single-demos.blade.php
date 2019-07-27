@@ -5,10 +5,21 @@
       'classes' => ''
     ])
 
-    @php the_content(); @endphp
+    @if($demo_image)
+      <div class="project-demo">
+        <img src="{{$demo_image}}"
+            alt="Project Demo for {{get_the_title(get_the_ID())}}">
+      </div>
+    @endif
 
-    @include('partials.global.related-media', [
-      'related_media' => $related_media
-    ])
+    <article class="demo-content">
+      @php the_content(); @endphp
+    </article>
+
+    @if($related_media)
+      @include('partials.global.related-media', [
+        'related_media' => $related_media
+      ])
+    @endif
   </div>
 </div>

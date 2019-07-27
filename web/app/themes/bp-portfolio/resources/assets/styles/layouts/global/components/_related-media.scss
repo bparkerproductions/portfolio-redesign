@@ -26,6 +26,10 @@
       .inline-icon-container {
         margin-bottom: 0;
       }
+
+      .description {
+        @extend %text-small;
+      }
     }
   }
 

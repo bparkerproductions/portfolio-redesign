@@ -9,14 +9,14 @@
           {{$hero_title}}
         </h1>
 
-        <div class="social-media lax"
+        {{-- <div class="social-media lax"
           data-lax-translate-y="0 0, 750 -250">
           @foreach($social_media as $icon)
             <a href="{{$icon['link']}}">
               <i class="{{$icon['class']}}"></i>
             </a>
           @endforeach
-        </div>
+        </div> --}}
       </div>
 
         <div class="hero-cards-container">

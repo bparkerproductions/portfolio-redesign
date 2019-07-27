@@ -19,6 +19,12 @@
               'classes' => 'minimal'
             ])
           @endif
+
+          @if(get_field('related_description', $id))
+            <p class="description">
+              {{get_field('related_description', $id)}}
+            </p>
+          @endif
         </div>
         <div class="link-container">
           <a href="{{get_the_permalink($id)}}"></a>
