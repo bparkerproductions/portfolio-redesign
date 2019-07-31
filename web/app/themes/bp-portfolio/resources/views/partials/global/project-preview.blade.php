@@ -1,4 +1,4 @@
-<div class="project">
+<article class="project">
   <div class="project-inner">
     @if(get_field('is_featured', $id))
       <div class="featured-icon">
@@ -43,4 +43,4 @@
       </button>
     </a>
   </div>
-</div>
+</article>

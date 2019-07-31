@@ -1,0 +1,15 @@
+.template-demos {
+  .demos-section {
+    @extend %layout-three-columns;
+  }
+
+  .card {
+    .desc {
+      @extend %text-small;
+    }
+
+    .inline-icon-container {
+      @extend %inline-icons;
+    }
+  }
+}

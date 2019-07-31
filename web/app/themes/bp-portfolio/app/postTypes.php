@@ -39,7 +39,7 @@ function create_demo_post_type() {
         'public' => true,
         'has_archive' => true,
         'show_in_rest' => true,
-            'supports' => ['editor', 'title']
+            'supports' => ['editor', 'title', 'excerpt']
         ]
     );
 }

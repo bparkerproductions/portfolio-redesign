@@ -2,3 +2,8 @@
 
 @import "flex";
 @import "spacing";
+@import "layout";
+
+.clickable-link {
+  @extend %clickable-link;
+}

@@ -297,6 +297,25 @@
             "maxlength": ""
         },
         {
+            "key": "field_5d3e9740cf97e",
+            "label": "Demo Description",
+            "name": "demo_description",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_5d132b8b00677",
             "label": "Navbar",
             "name": "",
@@ -463,5 +482,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1561537935
+    "modified": 1564383061
 }

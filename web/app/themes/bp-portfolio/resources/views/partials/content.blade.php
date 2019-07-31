@@ -11,10 +11,14 @@
       </div>
     @endif
     <header>
-      @include('partials/entry-meta')
+      @if($show_meta)
+        @include('partials/entry-meta')
+      @endif
       <div>
       <h4 class="entry-title">
-        <a href="{{ get_permalink() }}">{!! get_the_title() !!}</a>
+        <a href="{{ get_permalink() }}">
+          {!! get_the_title() !!}
+        </a>
       </h4>
     </header>
     <div class="entry-summary">

@@ -17,7 +17,9 @@
     <div class="inner-container">
       <div class="posts-container">
         @while(have_posts()) @php the_post() @endphp
-          @include('partials.content-'.get_post_type())
+          @include('partials.content-'.get_post_type(), [
+            'show_meta' => true
+          ])
         @endwhile
       </div>
     </div>
