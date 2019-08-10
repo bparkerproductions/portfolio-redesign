@@ -35,12 +35,25 @@
     </div>
   </div>
 
-  <div class="button-container">
-    <a href="{{get_permalink($id)}}">
-      <button class="button black">
-        See Details
-        <i class="fa fa-caret-right"></i>
-      </button>
-    </a>
+  <div class="button-wrap">
+    <div class="button-container">
+      <a href="{{get_permalink($id)}}">
+        <button class="button black">
+          See Details
+          <i class="fa fa-caret-right"></i>
+        </button>
+      </a>
+    </div>
+
+    @if(get_field('link', $id))
+      <div class="button-container">
+        <a href="{{get_field('link', $id)}}">
+          <button class="button black">
+            See Project
+            <i class="fa fa-caret-right"></i>
+          </button>
+        </a>
+      </div>
+    @endif
   </div>
 </article>

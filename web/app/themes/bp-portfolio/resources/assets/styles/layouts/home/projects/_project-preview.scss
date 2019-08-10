@@ -3,7 +3,7 @@
   padding: $spacer-small 0;
   transition: all 0.5s ease;
   transform: translateY(0);
-  flex-basis: 45%;
+  flex-basis: 49%;
 
   @include atTablet {
     flex-basis: 100%;
@@ -21,11 +21,13 @@
 
   .project-inner {
     position: relative;
+    box-shadow: 0 0 7px rgba($shade-black, 0.35);
   }
 
   .featured-icon {
     background-color: $white;
     z-index: 2;
+    border-radius: 0 3px 0 0;
 
     svg {
       color: $faded-blue;
@@ -34,12 +36,12 @@
 
   .header-container {
     padding: 10px 0;
-    position: absolute;
     z-index: 1;
     width: 100%;
     text-align: center;
-    background-color: rgba($blue, 0.85);
-    border-bottom: 1px solid rgba($black, 0.5);
+    background-color: $blue;
+    border-radius: 3px 3px 0 0;
+    border-bottom: 1px solid rgba($black, 0.15);
 
     @include column-center;
 
