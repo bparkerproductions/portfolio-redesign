@@ -6,7 +6,7 @@
     ])
 
     @if($demo_image)
-      <div class="project-demo">
+      <div class="project-demo mb-medium">
         <img src="{{$demo_image}}"
             alt="Project Demo for {{get_the_title(get_the_ID())}}">
       </div>

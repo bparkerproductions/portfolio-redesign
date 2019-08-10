@@ -20,7 +20,7 @@
 
     &:not(.active) {
       @include atMobile {
-        transform: translateY(-300px);
+        transform: translateY(-100vh);
       }
     }
 

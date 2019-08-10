@@ -40,7 +40,17 @@ class App extends Controller {
       return get_page_link(get_page_by_title('Blog')->ID);
     }
 
+    public function projectsPage() {
+      return get_page_by_title('All Projects')->ID;
+    }
+
     public function projectsLink() {
-      return get_page_link(get_page_by_title('All Projects')->ID);
+      return get_page_link($this->projectsPage());
+    }
+
+    public function robotsMeta() {
+      $isProjectsPage = get_the_ID() == $this->projectsPage();
+      $isProjects = get_post_type() == 'projects' || $isProjectsPage;
+      return $isProjects  ? ['robots', 'noindex'] : ['', ''];
     }
 }
