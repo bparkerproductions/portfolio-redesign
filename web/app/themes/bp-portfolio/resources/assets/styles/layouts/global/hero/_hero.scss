@@ -1,6 +1,13 @@
+/* stylelint-disable */
 .hero {
   height: 100vh;
-  background-color: $blue;
+  background: $blue;
+  background: linear-gradient(
+    135deg,
+    rgba(106,128,206,1) 33%,
+    rgb(139, 154, 206) 70%,
+    rgba(106,171,213,1) 100%
+  );
 
   @import "hero-cards";
 
@@ -18,12 +25,14 @@
     text-transform: uppercase;
   }
 
-  h1 {
-    margin-bottom: 20px;
-  }
+  .hero-title {
+    margin-bottom: $spacer-medium;
+    font-weight: 500;
 
-  .intro-container {
-    @include border-bottom($shade-black);
+    span {
+      font-weight: 700;
+      color: $shade-black;
+    }
   }
 
   .toggle-more {

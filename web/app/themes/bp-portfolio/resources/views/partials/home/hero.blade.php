@@ -5,7 +5,7 @@
       data-lax-translate-y="0 0, 750 -250">
 
       <div class="intro-container">
-        <h1 class="bold">{{$hero_title}}</h1>
+        <h1 class="hero-title">{!! $hero_title !!}</h1>
 
         {{-- <div class="social-media lax"
           data-lax-translate-y="0 0, 750 -250">
