@@ -5,9 +5,7 @@
       data-lax-translate-y="0 0, 750 -250">
 
       <div class="intro-container">
-        <h1 class="lax bold">
-          {{$hero_title}}
-        </h1>
+        <h1 class="bold">{{$hero_title}}</h1>
 
         {{-- <div class="social-media lax"
           data-lax-translate-y="0 0, 750 -250">
@@ -34,7 +32,7 @@
 
           <div class="button-container hard-center">
             <a>
-              <button class="button large black rotate projects-button">
+              <button class="button black rotate projects-button">
                 {{$hero_button_text}}
                 <i class="fas fa-caret-right"></i>
               </button>

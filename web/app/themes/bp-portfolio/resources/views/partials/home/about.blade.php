@@ -4,15 +4,10 @@
       <div class="content-container">
         <h1 class="blue">{{$about_title}}</h1>
         <p class="para">{!!$about_desc!!}</p>
-
-        <div class="button-container">
-          <a href="{{$about_btn_link}}">
-            <button class="button black">
-              {{$about_btn_text}}
-              <i class="fas fa-caret-right"></i>
-            </button>
-          </a>
-        </div>
+        @include('partials.components.button', [
+          'link' => $about_btn_link,
+          'text' => $about_btn_text
+        ])
       </div>
 
       <div class="technologies-container">
