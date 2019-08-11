@@ -1,3 +1,8 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   @include font-smoothing;
   @include font("Open Sans");
