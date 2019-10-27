@@ -4,7 +4,9 @@
 
     <article @php post_class() @endphp>
       <header>
-        @include('partials/entry-meta')
+        @include('partials/entry-meta', [
+          'postID' => get_the_ID()
+        ])
 
         <div class="image-container">
           {!! get_the_post_thumbnail() !!}
@@ -17,5 +19,7 @@
         {!! wp_link_pages(['echo' => 0, 'before' => '<nav class="page-nav"><p>' . __('Pages:', 'sage'), 'after' => '</p></nav>']) !!}
       </footer>
     </article>
+
+    @include('partials.global.related-posts')
   </div>
 </div>

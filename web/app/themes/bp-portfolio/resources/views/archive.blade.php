@@ -21,6 +21,7 @@
             'show_meta' => true
           ])
         @endwhile
+        @php the_posts_pagination( $args ); @endphp
       </div>
     </div>
   </div>

@@ -12,7 +12,9 @@
     @endif
     <header>
       @if($show_meta)
-        @include('partials/entry-meta')
+        @include('partials/entry-meta', [
+          'postID' => get_the_ID()
+        ])
       @endif
       <div>
       <h4 class="entry-title">

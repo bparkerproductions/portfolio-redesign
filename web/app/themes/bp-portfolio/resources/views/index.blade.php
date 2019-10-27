@@ -18,6 +18,11 @@
             'show_meta' => true
           ])
         @endwhile
+
+        {!! the_posts_navigation([
+          'prev_text' => 'More Posts',
+          'next_text' => 'Previous Posts'
+        ]) !!}
       </div>
     </div>
   </div>

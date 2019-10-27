@@ -4,7 +4,9 @@
       <a href="{{get_permalink()}}">{{ get_the_title() }}</a>
     </h4>
     @if (get_post_type() === 'post')
-      @include('partials/entry-meta')
+      @include('partials/entry-meta', [
+          'postID' => get_the_ID()
+        ])
     @endif
   </header>
   <div class="entry-summary">
