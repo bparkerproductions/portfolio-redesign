@@ -23,4 +23,8 @@ trait FrontPageHero {
   public function heroBlurbs() {
     return get_field('hero_blurbs');
   }
+
+  public function heroBgImage() {
+    return get_field('hero_background_image');
+  }
 }

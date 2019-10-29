@@ -1,4 +1,4 @@
-<nav class="primary-navigation column-center">
+<nav class="primary-navigation column-center nav-alt">
   <section class="primary-content inner-container">
 
     <div class="content-container">

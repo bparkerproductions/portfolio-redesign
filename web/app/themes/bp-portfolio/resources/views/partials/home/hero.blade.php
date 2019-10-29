@@ -1,5 +1,10 @@
-<section class="bg-black">
-  <div class="hero lax" data-lax-translate-y="0 0, 1000 -250">
+@php
+  $bgImage = 'background-image: url(' . $hero_bg_image . ');';
+@endphp
+
+<section class="bg-black"">
+  <div class="hero lax"
+  data-lax-translate-y="0 0, 1000 -250" style="{{$bgImage}}>
     <div class="inner-container">
       <div class="content-container lax"
       data-lax-translate-y="0 0, 750 -250">

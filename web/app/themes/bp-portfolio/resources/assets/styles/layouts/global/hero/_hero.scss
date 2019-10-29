@@ -1,8 +1,9 @@
 .hero {
   height: 100vh;
   background: $blue;
-
-  @extend %hero-gradient;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
   @import "hero-cards";
 
@@ -21,12 +22,18 @@
   }
 
   .hero-title {
-    margin-bottom: $spacer-medium;
-    font-weight: 500;
+    font-weight: 700;
+    color: $shade-black;
+    text-align: left;
+    margin: 0;
 
     span {
       font-weight: 700;
       color: $shade-black;
+    }
+
+    @include atTablet {
+      text-align: center;
     }
   }
 
@@ -41,7 +48,7 @@
     }
 
     svg {
-      color: $black;
+      color: $white;
       margin-bottom: 10px;
     }
   }
