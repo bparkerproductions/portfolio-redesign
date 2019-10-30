@@ -2,9 +2,10 @@
   $bgImage = 'background-image: url(' . $hero_bg_image . ');';
 @endphp
 
-<section class="bg-black"">
+<section class="bg-mountain-blue">
   <div class="hero lax"
-  data-lax-translate-y="0 0, 1000 -250" style="{{$bgImage}}>
+  data-lax-translate-y="0 0, 1000 -250" style="{{$bgImage}}">
+    <canvas id="snowstorm"></canvas>
     <div class="inner-container">
       <div class="content-container lax"
       data-lax-translate-y="0 0, 750 -250">

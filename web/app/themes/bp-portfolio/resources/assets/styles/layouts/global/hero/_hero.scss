@@ -1,6 +1,5 @@
 .hero {
   height: 100vh;
-  background: $blue;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -19,6 +18,10 @@
     text-align: center;
     color: $white;
     text-transform: uppercase;
+  }
+
+  canvas#snowstorm {
+    @extend %absolute-fill;
   }
 
   .hero-title {

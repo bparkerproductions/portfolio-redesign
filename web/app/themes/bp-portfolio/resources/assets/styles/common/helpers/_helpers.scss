@@ -5,5 +5,5 @@
 @import "layout";
 
 .clickable-link {
-  @extend %clickable-link;
+  @extend %absolute-fill;
 }

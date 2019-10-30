@@ -2,16 +2,17 @@
   padding: $spacer-larger 0 $spacer-medium 0;
   border-bottom: 1px solid rgba($shade-black, 0.2);
   clip-path: polygon(0 0, 100% 0%, 100% 92%, 0 100%);
-
-  @extend %hero-gradient;
+  background-color: $bg-grey;
 
   @include allHeaders {
     color: $white;
     margin-bottom: 10px;
   }
 
-  p {
-    color: $white;
+  p,
+  .header,
+  a {
+    color: $shade-black;
   }
 
   .subtitle-container {
@@ -27,7 +28,6 @@
     }
 
     a {
-      color: $white;
       font-weight: 700;
       text-decoration: underline;
     }

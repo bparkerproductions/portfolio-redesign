@@ -27,7 +27,7 @@
   }
 
   .link-container a {
-    @extend %clickable-link;
+    @extend %absolute-fill;
   }
 
   .card-container {

@@ -64,4 +64,8 @@ class App extends Controller {
 
       return array_slice($latest->posts, 0, 4);
     }
+
+    public function heroBgImage() {
+      return get_field('hero_background_image', 'option');
+    }
 }

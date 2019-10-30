@@ -1,10 +1,12 @@
 import Scroll from '../components/scroll';
+import Snowstorm from '../components/snowstorm';
 import lax from 'lax.js';
 
 export default {
   init() {
     this.setEventListeners();
     this.initLax();
+    Snowstorm.init();
   },
   setEventListeners() {
     $('.projects-button').click(() => {
