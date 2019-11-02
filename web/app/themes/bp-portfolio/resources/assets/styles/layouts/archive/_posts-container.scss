@@ -1,7 +1,7 @@
 .posts-container {
   @import "parts/posts-navigation";
 
-  @extend %layout-two-columns-break-tablet;
+  @extend %layout-two-columns;
 
   article {
     @import "parts/read-more";
@@ -22,6 +22,20 @@
       padding: 40px 35px 0 35px;
       margin-bottom: 12.5px;
       position: relative;
+
+      @include atTablet {
+        padding: 20px 20px 0 20px;
+      }
+
+      @include atMobile {
+        padding-top: 10px;
+      }
+
+      .entry-title {
+        @include atTablet {
+          margin-top: 10px;
+        }
+      }
 
       .entry-summary {
         @extend %text-small;

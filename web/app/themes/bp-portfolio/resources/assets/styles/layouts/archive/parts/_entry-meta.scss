@@ -1,4 +1,6 @@
 .entry-meta {
+  @import "meta-col";
+
   display: flex;
   flex-direction: column;
   margin-bottom: 12.5px;
@@ -32,26 +34,9 @@
     }
   }
 
-  .meta-col {
-    margin-top: 12.5px;
-    display: flex;
-    align-items: center;
-
-    @include atMobile {
-      padding: 0;
-      margin-bottom: 10px;
-      border: none;
-    }
-
-    .icon-container {
-      width: 30px;
-      margin-right: 7.5px;
-    }
-  }
-
   .categories,
   time {
-    @include atMobile {
+    @include atTablet {
       font-size: 0.9em;
     }
   }

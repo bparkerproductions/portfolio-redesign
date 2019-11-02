@@ -6,6 +6,10 @@
 
   @include hard-center;
 
+  @include atTablet {
+    padding: 10px;
+  }
+
   &:hover {
     color: $black;
 
@@ -19,11 +23,19 @@
 
     svg {
       margin-right: 15px;
+
+      @include atMobile {
+        display: none;
+      }
     }
 
     .read-more-text {
       margin: 0;
       color: $white;
+
+      @include atMobile {
+        font-size: 1.25em;
+      }
     }
   }
 }

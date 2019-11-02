@@ -18,9 +18,7 @@
                 </a>
               </h4>
             </header>
-            <div class="entry-summary">
-              @php the_excerpt($ID) @endphp
-            </div>
+            <div class="entry-summary">{!! get_the_excerpt($ID) !!}</div>
           </section>
 
           <a class="read-more-link" href="{{get_permalink($ID)}}">

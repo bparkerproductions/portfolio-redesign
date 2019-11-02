@@ -7,7 +7,7 @@ export default {
     SnowStorm.flakes = [];
     SnowStorm.canvas = canvasElem;
     SnowStorm.ctx = canvasElem.getContext('2d');
-    SnowStorm.flakeCount = 500;
+    SnowStorm.flakeCount = this.getFlakeCount();
     SnowStorm.mX = -100;
     SnowStorm.mY = -100;
     SnowStorm.canvas.width = window.innerWidth;
@@ -15,6 +15,10 @@ export default {
 
     this.startAnimation();
     this.setEventListener();
+  },
+  getFlakeCount() {
+    let isSmaller = window.innerWidth <= 1024;
+    return isSmaller ? 50 : 300;
   },
   requestFrame() {
     var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame ||
