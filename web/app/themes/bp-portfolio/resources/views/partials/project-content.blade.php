@@ -22,7 +22,8 @@
     @if($testimonials)
       <div id="project-testimonial">
         @include('partials.home.testimonials', [
-          'testimonials' => $testimonials
+          'testimonials' => $testimonials,
+          'slider_classes' => 'no-slick'
         ])
       </div>
     @endif

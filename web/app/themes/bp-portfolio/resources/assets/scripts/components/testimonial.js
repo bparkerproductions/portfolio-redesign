@@ -20,7 +20,7 @@ let Slider = {
     });
   },
   getSliderContainer() {
-    return $('.testimonials-container .slider-container');
+    return $('.testimonials-container .slider-container:not(.no-slick)');
   },
   initMainSlider() {
     Slider.getSliderContainer().slick({

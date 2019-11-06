@@ -11,9 +11,9 @@
     </div>
 
     {{-- Testimonials --}}
-    <div class="slider-container">
+    <div class="slider-container {{$slider_classes}}">
     @foreach($testimonials as $testimonial)
-      <div class="testimonial card">
+      <div class="testimonial col card">
         <div class="head blue">
           <h5 class="category">{{get_field('name', $testimonial)}}</h5>
         </div>
