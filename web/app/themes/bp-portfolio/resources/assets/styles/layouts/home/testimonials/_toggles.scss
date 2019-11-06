@@ -1,39 +1,19 @@
-.next { right: 0; }
-.previous { left: 0; }
-
-.next,
-.previous {
-  padding-right: 25px;
-  padding-left: 25px;
+.toggles-container {
   display: flex;
-  align-items: center;
-  transition: all 0.5s ease;
+  justify-content: center;
+  margin-bottom: 25px;
 
-  @include atTablet {
-    height: 100%;
-    position: absolute;
-    padding-right: 12.5px;
-    padding-left: 12.5px;
-  }
-
-  @include atMobile {
-    padding-right: 7.5px;
-    padding-left: 7.5px;
-  }
-
-  @include onHover {
-    background-color: rgba($bg-grey, 0.75);
+  .toggle {
+    margin: 0 35px;
     cursor: pointer;
-  }
+    transition: all 0.35s ease;
 
-  i,
-  svg {
-    font-size: 3em;
-    color: $shade-black;
-    cursor: pointer;
+    &:hover {
+      color: $blue;
+    }
 
-    @include atTablet {
-      font-size: 2em;
+    svg {
+      font-size: 3em;
     }
   }
 }

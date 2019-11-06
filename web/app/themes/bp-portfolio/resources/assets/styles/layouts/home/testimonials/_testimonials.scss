@@ -1,23 +1,35 @@
-.testimonials {
-  background-color: rgba($bg-grey, 0.35);
+.testimonials .testimonials-container {
+  @import "body";
+  @import "toggles";
 
-  .testimonial-container {
-    @import "toggles";
-    @import "single-testimonial";
+  .slick-slide {
+    box-sizing: border-box;
+    padding: 0 5px;
 
-    display: flex;
-    position: relative;
-    background-color: $blue;
-    justify-content: center;
-
-    @include atTablet {
-      @include column-center;
-
-      width: 100%;
+    @include atMobileAndUp {
+      padding: 20px;
+      height: 400px;
     }
 
-    @include atMobile {
-      height: auto;
+    > div,
+    .testimonial {
+      height: 100%;
+    }
+
+    .body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .inner-content p {
+      @include atMobileAndUp {
+        height: 130px;
+        overflow: auto;
+        overflow-x: auto;
+
+        @include scrollbar($blue, 6px);
+      }
     }
   }
 }

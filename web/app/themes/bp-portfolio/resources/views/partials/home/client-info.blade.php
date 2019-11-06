@@ -1,13 +1,4 @@
 <div class="client-info">
-  {{-- Name --}}
-  <p class="client-name">
-    <i class="fas fa-user"></i>
-    <span class="text">
-      {{get_field('name', $testimonial)}}
-    </span>
-  </p>
-
-  {{-- Company --}}
   <a class="client-company"
   href="{{get_field('company', $testimonial)}}">
     <i class="fas fa-briefcase"></i>

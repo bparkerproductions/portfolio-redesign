@@ -8,7 +8,7 @@ export default {
     let $para = $('.para-read-more');
     $('.hide', $para).hide();
 
-    $para.append('<span class=\'read\'>Read More...</span>');
+    //$para.append('<span class=\'read\'>Read More...</span>');
   },
   expandDesc() {
     let $para = $(this).closest('.para-read-more');
