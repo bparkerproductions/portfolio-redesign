@@ -1,6 +1,11 @@
-<div class="client-info">
-  <a class="client-company"
-  href="{{get_field('company', $testimonial)}}">
+@php
+$company = get_field('company', $testimonial);
+$project = get_field('project', $testimonial);
+$isDisabled = $company == "" ? 'disabled' : '';
+@endphp
+
+<div class="client-info ">
+  <a class="client-company {{$isDisabled}}" href="{{$company}}">
     <i class="fas fa-briefcase"></i>
     <span class="link">
       Website
@@ -8,9 +13,8 @@
   </a>
 
   {{-- Project Link --}}
-  @if(get_field('project', $testimonial) && is_front_page())
-    @php $project_id = get_field('project', $testimonial)[0] @endphp
-    <a class="project-link" href="{{get_permalink($project_id)}}">
+  @if($project && is_front_page())
+    <a class="project-link" href="{{get_permalink($project[0])}}">
       <i class="fas fa-laptop-code"></i>
       <span class="link">See Project</span>
     </a>
