@@ -54,14 +54,6 @@
         }
       }
 
-      &:not(.has-dropdown) {
-        transition: all 0.35s ease;
-
-        &:hover {
-          transform: translateY(-1px);
-        }
-      }
-
       &.has-dropdown:hover .submenu {
         opacity: 1;
         transform: translateY(0);

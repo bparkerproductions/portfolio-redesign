@@ -18,7 +18,7 @@ export default {
   },
   getFlakeCount() {
     let isSmaller = window.innerWidth <= 1024;
-    return isSmaller ? 50 : 300;
+    return isSmaller ? 50 : 200;
   },
   requestFrame() {
     var requestAnimationFrame = window.requestAnimationFrame || window.mozRequestAnimationFrame || window.webkitRequestAnimationFrame || window.msRequestAnimationFrame ||

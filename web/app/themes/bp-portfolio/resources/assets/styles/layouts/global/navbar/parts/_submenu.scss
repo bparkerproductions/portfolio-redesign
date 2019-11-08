@@ -1,14 +1,26 @@
 .hover-container {
   @include atMobileAndUp {
     position: absolute;
-    padding: 30px;
+    padding: 15px 10px 10px 10px;
     left: -30px;
-    top: -5px;
+    top: 15px;
     overflow: hidden;
+    pointer-events: none;
+
+    &.active {
+      pointer-events: all;
+    }
   }
 
   .submenu {
+    @import "pointer";
+
+    position: relative;
     margin-top: 10px;
+
+    &.active {
+      z-index: 2;
+    }
 
     @include atMobileAndUp {
       background-color: $white;
