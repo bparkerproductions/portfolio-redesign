@@ -216,7 +216,7 @@
             "key": "field_5c7dc4eaedd13",
             "label": "About Description",
             "name": "home_about_description",
-            "type": "textarea",
+            "type": "wysiwyg",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -226,10 +226,10 @@
                 "id": ""
             },
             "default_value": "",
-            "placeholder": "",
-            "maxlength": "",
-            "rows": "",
-            "new_lines": ""
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "delay": 0
         },
         {
             "key": "field_5c7dc4faedd14",
@@ -507,5 +507,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1572316275
+    "modified": 1573231515
 }

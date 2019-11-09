@@ -26,3 +26,23 @@
     color: $blue;
   }
 }
+
+.slider-toggle-arrows {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+
+  .toggle {
+    margin: 0 35px;
+    cursor: pointer;
+    transition: all 0.35s ease;
+
+    &:hover {
+      color: $blue;
+    }
+
+    svg {
+      font-size: 3em;
+    }
+  }
+}

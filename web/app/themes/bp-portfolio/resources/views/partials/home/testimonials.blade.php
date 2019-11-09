@@ -1,7 +1,7 @@
 <section class="testimonials column-center spacer">
   <div class="inner-container testimonials-container">
 
-    <div class="toggles-container">
+    <div class="slider-toggle-arrows">
       <div class="previous toggle">
         <i class="fas fa-chevron-left"></i>
       </div>

@@ -1,6 +1,15 @@
 <section class="related-posts mt-medium">
   <div class="header-container">
-    <h2>More Posts</h2>
+    <h2 class="title">More Posts</h2>
+
+    <div class="slider-toggle-arrows">
+      <div class="previous toggle">
+        <i class="fas fa-angle-left"></i>
+      </div>
+      <div class="next toggle">
+        <i class="fas fa-angle-right"></i>
+      </div>
+    </div>
   </div>
   <div class="inner-container">
     <div class="posts-container layout-two-columns ">

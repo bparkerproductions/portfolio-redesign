@@ -2,7 +2,7 @@
   <div class="inner-container">
     <div class="top-row">
       <div class="content-container">
-        <h1 class="blue">{{$about_title}}</h1>
+        <h1 class="blue mt-none">{{$about_title}}</h1>
         <p class="para">{!!$about_desc!!}</p>
         @include('partials.components.button', [
           'link' => $about_btn_link,
