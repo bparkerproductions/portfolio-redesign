@@ -1,3 +1,5 @@
+import SlickOptions from './slick-options';
+
 export default {
   init() {
     //initially set card amount
@@ -23,19 +25,6 @@ let Slider = {
     return $('.testimonials-container .slider-container:not(.no-slick)');
   },
   initMainSlider() {
-    Slider.getSliderContainer().slick({
-      arrows: false,
-      slidesToShow: 2,
-      slidesToScroll: 1,
-      responsive: [
-        {
-          breakpoint: 650,
-          settings: {
-            slidesToShow: 1,
-            adaptiveHeight: true,
-          },
-        },
-      ],
-    });
+    Slider.getSliderContainer().slick(SlickOptions.verticalSlider());
   },
 }
