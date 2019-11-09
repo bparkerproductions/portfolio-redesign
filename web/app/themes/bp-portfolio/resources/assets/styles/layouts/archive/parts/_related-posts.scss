@@ -1,0 +1,25 @@
+.entry-content .related-posts {
+  .header-container {
+    display: flex;
+    align-items: center;
+
+    @include mb-custom(35px, 15px);
+  }
+
+  .slick-slide {
+    height: 525px;
+
+    article {
+      height: 100%;
+      margin: 0;
+    }
+  }
+
+  .title {
+    margin: 0 30px 0 0;
+  }
+
+  .slider-toggle-arrows {
+    margin: 0;
+  }
+}

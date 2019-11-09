@@ -1,18 +1,24 @@
 <aside class="social-share">
   <p>Share</p>
+
+  {{-- Twitter --}}
   <div class="icon-container">
-  <a target="_blank" href="https://twitter.com/home?status={!!get_permalink()!!}">
+  <a target="_blank" href="{{$twitter_link}}">
     <i class="fab fa-twitter-square"></i>
   </a>
   </div>
+
+  {{-- Facebook --}}
   <div class="icon-container">
-    <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={!!get_permalink()!!}&display=popup">
+    <a target="_blank" href="{{$facebook_link}}">
       <i class="fab fa-facebook-square"></i>
     </a>
   </div>
-  <div class="icon-container">
-    <a target="_blank" href="https://www.linkedin.com/shareArticle?mini=true&url={!!get_permalink()!!}&title={!!the_title()!!}&summary=&source=">
+
+  {{-- Linked In --}}
+  {{-- <div class="icon-container">
+    <a target="_blank" href="{{$linkedin_link}}">
       <i class="fab fa-linkedin"></i>
     </a>
-  </div>
+  </div> --}}
 </aside>

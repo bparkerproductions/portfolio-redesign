@@ -1,5 +1,6 @@
 .single-post {
   @import "../global/components/social-share";
+  @import "parts/related-posts";
 
   .entry-meta {
     margin-bottom: 15px;
@@ -24,20 +25,4 @@
       max-width: 100%;
     }
   }
-
-  .entry-content .related-posts {
-    .title {
-      margin: 0 30px 0 0;
-    }
-
-    .header-container {
-      display: flex;
-      align-items: center;
-    }
-
-    .slider-toggle-arrows {
-      margin: 0;
-    }
-  }
 }
-

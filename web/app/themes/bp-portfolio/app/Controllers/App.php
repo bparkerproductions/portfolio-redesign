@@ -8,6 +8,7 @@ class App extends Controller {
     use Partials\GlobalOptions;
     use Partials\GlobalFields;
     use Partials\Navbar;
+    use Partials\SocialShare;
 
     public function siteName() {
       return get_bloginfo('name');
@@ -62,7 +63,7 @@ class App extends Controller {
           'fields' => 'ids'
       ));
 
-      return array_slice($latest->posts, 0, 4);
+      return array_slice($latest->posts, 0, 10);
     }
 
     public function heroBgImage() {
