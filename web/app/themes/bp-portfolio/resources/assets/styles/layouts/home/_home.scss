@@ -1,3 +1,6 @@
-@import "about/about";
-@import "projects/projects";
-@import "testimonials/testimonials";
+.front-page {
+  @import "about/about";
+
+  //parts
+  @import "parts/related-posts";
+}

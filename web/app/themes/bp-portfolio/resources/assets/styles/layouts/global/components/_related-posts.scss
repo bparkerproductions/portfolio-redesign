@@ -1,14 +1,14 @@
-.entry-content .related-posts {
+.related-posts {
   .header-container {
     display: flex;
     align-items: center;
+    margin-left: 15px;
 
     @include mb-custom-full(35px, 20px, 0);
 
     @include atMobile {
       flex-direction: column;
       align-items: flex-start;
-      margin-left: 15px;
     }
 
     .title {

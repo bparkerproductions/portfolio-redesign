@@ -1,9 +1,7 @@
 <section id="projects-container" class="spacer column-center projects">
   <div class="inner-container">
     <div class="projects-section-header">
-      <h1 class="blue">
-        {{$projects_title}}
-      </h1>
+      <h2 class="blue title">{{$projects_title}}</h2>
     </div>
 
     <div class="projects-section">

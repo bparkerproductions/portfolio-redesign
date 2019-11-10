@@ -20,6 +20,8 @@
       </footer>
     </article>
 
-    @include('partials.global.related-posts')
+    @include('partials.global.related-posts', [
+      'component_title' => 'More Posts'
+    ])
   </div>
 </div>

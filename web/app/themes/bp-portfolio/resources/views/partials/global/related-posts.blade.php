@@ -1,6 +1,6 @@
 <section class="related-posts mt-medium">
   <div class="header-container">
-    <h2 class="title">More Posts</h2>
+    <h2 class="title">{{$component_title}}</h2>
 
     <div class="slider-toggle-arrows">
       <div class="previous toggle">

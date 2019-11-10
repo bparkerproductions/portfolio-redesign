@@ -12,6 +12,15 @@
   {{-- About Section --}}
   @include('partials.home.about')
 
+  {{-- Blog Posts Section --}}
+  <section class="blog-posts-container column-center">
+    <div class="inner-container">
+      @include('partials.global.related-posts', [
+        'component_title' => 'See Blog Posts'
+      ])
+    </div>
+  </section>
+
   {{-- Projects Section --}}
   @include('partials.home.projects')
 

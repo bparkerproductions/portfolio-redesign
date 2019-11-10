@@ -5,11 +5,14 @@
 @import "hero/hero";
 
 /* Import Global Components */
+@import "projects/projects";
+@import "testimonials/testimonials";
 @import "components/social-media";
 @import "components/cta";
-@import "components/gallery/gallery";
+@import "components/gallery";
 @import "components/content-rows";
 @import "components/related-media";
+@import "components/related-posts";
 
 /* Footer */
 @import "footer/footer";
