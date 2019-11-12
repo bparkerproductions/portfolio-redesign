@@ -2,9 +2,6 @@
   @import "projects-header";
   @import "projects-section";
 
-  background-color: rgba($bg-grey, 0.5);
-  clip-path: polygon(0 0, 100% 2%, 100% 100%, 0% 100%);
-
   .bottom-link-container {
     font-size: 1.25em;
     display: flex;

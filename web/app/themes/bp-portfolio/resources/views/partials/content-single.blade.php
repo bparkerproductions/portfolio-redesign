@@ -23,5 +23,6 @@
     @include('partials.global.related-posts', [
       'component_title' => 'More Posts'
     ])
+    @include('partials.comments')
   </div>
 </div>

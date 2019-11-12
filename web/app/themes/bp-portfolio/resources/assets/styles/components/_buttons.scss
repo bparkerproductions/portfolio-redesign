@@ -1,26 +1,7 @@
 .button {
   @include btn-size-normal;
   @include hard-center-no-column;
-
-  text-transform: uppercase;
-  border: 0;
-  border-radius: 3px;
-  font-weight: 700;
-  cursor: pointer;
-  transition: 0.35s all ease;
-  white-space: nowrap;
-
-  i,
-  svg {
-    margin-left: 8px;
-    font-size: 1.5em;
-    position: relative;
-    top: -0.5px;
-  }
-
-  &:focus {
-    outline: none;
-  }
+  @include btn-base;
 }
 
 /* Sizes */
@@ -38,12 +19,7 @@
 
 /* Colors */
 .button.black {
-  background-color: $shade-black;
-  color: $white;
-
-  &:hover {
-    background-color: $black;
-  }
+  @include btn-black;
 }
 
 .button.rotate {

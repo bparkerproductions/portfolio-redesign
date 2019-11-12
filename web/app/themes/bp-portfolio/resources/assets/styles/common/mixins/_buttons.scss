@@ -17,3 +17,34 @@
   padding: 10px;
   font-size: 0.9em;
 }
+
+@mixin btn-black {
+  background-color: $shade-black;
+  color: $white;
+
+  &:hover {
+    background-color: $black;
+  }
+}
+
+@mixin btn-base {
+  text-transform: uppercase;
+  border: 0;
+  border-radius: 3px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.35s all ease;
+  white-space: nowrap;
+
+  i,
+  svg {
+    margin-left: 8px;
+    font-size: 1.5em;
+    position: relative;
+    top: -0.5px;
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
