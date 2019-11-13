@@ -1,3 +1,15 @@
+#respond {
+  @include mb-custom($spacer-medium, $spacer-small);
+}
+
+#cancel-comment-reply-link {
+  font-size: 16px;
+}
+
+.comment-form-cookies-consent {
+  display: none;
+}
+
 .comment-form {
   display: flex;
   align-items: flex-end;

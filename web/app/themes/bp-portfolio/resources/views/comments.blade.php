@@ -7,12 +7,14 @@ if (post_password_required()) {
 <section id="comments" class="comments">
   @php comment_form($comment_options); @endphp
   @if (have_comments())
-    <h2 class="comments-title">
-      {!! sprintf(_nx('One Comment;', '%1$s comments', get_comments_number(), 'comments title', 'sage'), number_format_i18n(get_comments_number()), '<span>' . get_the_title() . '</span>') !!}
-    </h2>
+    <h3 class="comments-title">
+      {!! sprintf(_nx('One Comment', '%1$s Comments', get_comments_number(), 'comments title', 'sage'), number_format_i18n(get_comments_number()), '<span>' . get_the_title() . '</span>') !!}
+    </h3>
 
     <ul class="comment-list">
-      {!! wp_list_comments(['style' => 'ol', 'short_ping' => true]) !!}
+      {!! wp_list_comments(
+        ['style' => 'ul', 'short_ping' => true]
+      ) !!}
     </ul>
 
     @if (get_comment_pages_count() > 1 && get_option('page_comments'))

@@ -26,7 +26,7 @@ trait Comments {
   public function commentOptions() {
     return [
       'label_submit' => 'Post!',
-      'title_reply' => 'Write a Comment',
+      'title_reply' => 'Leave a Comment',
       'fields' => [
         'author' => $this->makeAuthorMarkup(),
       ],
