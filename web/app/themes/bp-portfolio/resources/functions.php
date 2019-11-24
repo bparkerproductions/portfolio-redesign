@@ -56,6 +56,27 @@ if( function_exists('acf_add_options_page') ) {
     ]);
 }
 
+/*
+ * Defer scripts
+ */
+add_filter( 'script_loader_tag', 'bp_defer_scripts', 10, 3 );
+function bp_defer_scripts( $tag, $handle, $src ) {
+
+	// The handles of the enqueued scripts we want to defer
+	$defer_scripts = array(
+        'bp-slick-js',
+        'bp-fancybox-js',
+        'bp-icon',
+        'bp-font'
+	);
+
+    if ( in_array( $handle, $defer_scripts ) ) {
+        return '<script src="' . $src . '" defer="defer" type="text/javascript"></script>' . "\n";
+    }
+
+    return $tag;
+}
+
 
 /**
  * Sage required files

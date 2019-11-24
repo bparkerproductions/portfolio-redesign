@@ -1,6 +1,6 @@
 <?php
 
-/* CUSTOM post types */
+/* PROJECTS post type */
 function create_projects_post_type() {
     register_post_type( 'projects',
         [
@@ -15,6 +15,8 @@ function create_projects_post_type() {
 }
 add_action( 'init', 'create_projects_post_type' );
 
+
+/* TESTIOMINALS post type */
 function create_testimonials_post_type() {
     register_post_type( 'testimonials',
         [
@@ -29,6 +31,8 @@ function create_testimonials_post_type() {
 }
 add_action( 'init', 'create_testimonials_post_type' );
 
+
+/* DEMO post type */
 function create_demo_post_type() {
     register_post_type( 'demos',
         [
