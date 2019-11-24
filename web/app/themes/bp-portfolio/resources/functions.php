@@ -77,6 +77,18 @@ function bp_defer_scripts( $tag, $handle, $src ) {
     return $tag;
 }
 
+//for css files
+function sage_defer_scripts($url)
+{
+    if ( strpos( $url, '#deferload') === false )
+        return $url;
+    else if ( is_admin() )
+        return str_replace( '#deferload', '', $url );
+    else
+	return str_replace( '#deferload', '', $url )."' defer='defer";
+    }
+add_filter( 'clean_url', 'sage_defer_scripts', 11, 1 );
+
 
 /**
  * Sage required files

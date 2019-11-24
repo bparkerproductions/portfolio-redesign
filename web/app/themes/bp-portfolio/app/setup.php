@@ -12,10 +12,10 @@ use Roots\Sage\Template\BladeProvider;
  */
 add_action('wp_enqueue_scripts', function () {
     wp_enqueue_style('sage/main.css', asset_path('styles/main.css'), false, null);
-    wp_enqueue_style('bp-normalize', 'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css');
-    wp_enqueue_style('bp-font', 'https://fonts.googleapis.com/css?family=Lato:300,400,700|Open+Sans');
+    wp_enqueue_style('bp-normalize', 'https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css#deferload');
+    wp_enqueue_style('bp-font', 'https://fonts.googleapis.com/css?family=Lato:300,400,700|Open+Sans#deferload');
     wp_enqueue_style('bp-fancybox-css', 'https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css');
-    wp_enqueue_style('bp-slick-css', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css');
+    wp_enqueue_style('bp-slick-css', 'https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css#deferload');
     wp_enqueue_script('sage/main.js', asset_path('scripts/main.js'), ['jquery'], null, true);
     wp_enqueue_script('bp-icon', 'https://use.fontawesome.com/releases/v5.6.3/js/all.js');
     wp_enqueue_script('bp-fancybox-js', 'https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js');
