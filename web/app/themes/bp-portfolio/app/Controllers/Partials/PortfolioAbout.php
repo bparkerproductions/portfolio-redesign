@@ -2,7 +2,7 @@
 
 namespace App\Controllers\Partials;
 
-trait FrontPageAbout {
+trait PortfolioAbout {
   public function aboutTitle() {
     return get_field('home_about_title');
   }

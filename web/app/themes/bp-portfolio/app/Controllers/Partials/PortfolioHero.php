@@ -2,7 +2,7 @@
 
 namespace App\Controllers\Partials;
 
-trait FrontPageHero {
+trait PortfolioHero {
   public function heroTitle() {
     return get_field('home_hero_title');
   }

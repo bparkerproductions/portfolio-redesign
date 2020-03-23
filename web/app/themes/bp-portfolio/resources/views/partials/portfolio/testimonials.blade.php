@@ -28,7 +28,7 @@
               </p>
             </div>
           </div>
-          @include('partials.home.client-info')
+          @include('partials.portfolio.client-info')
         </div>
       </div>
     @endforeach

@@ -2,7 +2,7 @@
 
 namespace App\Controllers\Partials;
 
-trait FrontPageProjects {
+trait PortfolioProjects {
   public function projectsTitle() {
     return get_field('projects_title');
   }

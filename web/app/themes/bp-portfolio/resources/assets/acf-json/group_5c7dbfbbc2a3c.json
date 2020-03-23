@@ -1,6 +1,6 @@
 {
     "key": "group_5c7dbfbbc2a3c",
-    "title": "Front Page",
+    "title": "Portfolio",
     "fields": [
         {
             "key": "field_5c7dbfbfcbdf3",
@@ -495,7 +495,7 @@
             {
                 "param": "page_template",
                 "operator": "==",
-                "value": "views\/front-page.blade.php"
+                "value": "views\/template-portfolio.blade.php"
             }
         ]
     ],
@@ -507,5 +507,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1573231515
+    "modified": 1584999290
 }
