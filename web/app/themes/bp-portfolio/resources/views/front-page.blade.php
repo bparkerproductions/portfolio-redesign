@@ -6,5 +6,5 @@
 
 @section('content')
 
-<p>home</p>
+@include('partials.home.hero')
 @endsection

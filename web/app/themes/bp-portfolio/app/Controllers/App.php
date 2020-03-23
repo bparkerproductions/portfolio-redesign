@@ -14,6 +14,10 @@ class App extends Controller {
       return get_bloginfo('name');
     }
 
+    public function portfolioLink() {
+      return get_permalink(get_page_by_title('Portfolio'));
+    }
+
     public static function title() {
       if (is_home()) {
         if ($home = get_option('page_for_posts', true)) {
