@@ -1,5 +1,5 @@
-<section class="home-hero column-center">
-  <div class="inner-container layout-two-columns">
+<section class="home-hero">
+  <div class="layout-two-columns">
     <div class="left-column col">
       <h2 class="title">{{ $home_hero['section_1_header'] }}</h2>
       <p class="description">{{ $home_hero['text_section_1'] }}</p>

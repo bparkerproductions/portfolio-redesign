@@ -23,7 +23,7 @@
 
       @include atMobileAndUp {
         border-right: 1px solid rgba($shade-black, 0.5);
-        margin-right: 30px;
+        margin-right: 20px;
       }
 
       svg {
@@ -47,7 +47,7 @@
       a {
         color: $white;
         font-weight: 700;
-        font-size: 16px;
+        font-size: 14px;
 
         @include atMobile {
           color: $shade-black;

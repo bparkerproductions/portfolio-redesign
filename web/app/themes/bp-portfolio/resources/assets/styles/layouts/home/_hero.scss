@@ -1,0 +1,57 @@
+.home-hero {
+  .col {
+    padding: 10% 5% 2.5% 5%;
+    box-sizing: border-box;
+
+    .title {
+      margin-bottom: 15px;
+    }
+
+    @include atMobileAndUp {
+      flex-basis: 50%;
+    }
+
+    @include atMobile {
+      padding: 7.5% 5%;
+    }
+  }
+
+  .layout-two-columns {
+    background-color: $faded-blue;
+  }
+
+  .left-column {
+    background-color: $shade-black;
+
+    @include atMobileAndUp {
+      padding-right: 10%;
+      clip-path: polygon(0 0, 85% 0, 100% 100%, 0% 100%);
+    }
+
+    .title,
+    .description,
+    a {
+      color: $white;
+    }
+  }
+
+  .portfolio-link,
+  .scroll-to-about {
+    font-weight: 700;
+    margin-top: 7.5px;
+  }
+
+  .scroll-to-about {
+    color: $shade-black;
+  }
+
+  .right-column {
+    background-color: $faded-blue;
+
+    .title,
+    .description,
+    a {
+      color: $black;
+    }
+  }
+}

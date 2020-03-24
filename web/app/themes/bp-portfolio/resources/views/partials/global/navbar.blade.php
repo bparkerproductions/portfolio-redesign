@@ -6,7 +6,7 @@
         <div class="home-item-container">
           <i class="{{$home_item_icon}}"></i>
           <li class="home-item {{APP::isActive('home page')}}">
-            <a href="{{$home_item['url']}}">
+            <a class="main-list-link" href="{{$home_item['url']}}">
               {{$home_item['title']}}
             </a>
           </li>
@@ -20,7 +20,7 @@
           @endphp
 
           <li class="{{$is_active}} {{$has_dropdown}}">
-            <a href="{{$item['link']['url']}}">
+            <a class="main-list-link" href="{{$item['link']['url']}}">
               {{$item['link']['title']}}
             </a>
 
