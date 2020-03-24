@@ -37,6 +37,10 @@ class App extends Controller {
       return get_the_title();
     }
 
+    public static function categoryIconID($id) {
+      return get_field('category_icon', 'category_' . $id)[0]->ID;
+    }
+
     public static function IsActive($page) {
       return is_page($page) ? 'active' : '';
     }
