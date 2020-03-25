@@ -13,7 +13,7 @@
   </div>
   <div class="inner-container">
     <div class="posts-container layout-two-columns ">
-      @foreach($random_post_ids as $ID)
+      @foreach(APP::randomPostIds(10) as $ID)
         <article class="col mt-small mb-small">
           <section class="top-post">
             <header>

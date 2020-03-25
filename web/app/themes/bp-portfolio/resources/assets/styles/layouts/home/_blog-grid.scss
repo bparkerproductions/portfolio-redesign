@@ -1,0 +1,12 @@
+.blog-grid {
+  .blog-list {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+
+    .single-blog-post {
+      flex-basis: 33%;
+    }
+  }
+}
