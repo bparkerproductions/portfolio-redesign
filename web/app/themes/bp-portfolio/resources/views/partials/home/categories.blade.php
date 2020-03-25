@@ -1,5 +1,8 @@
 <section class="blog-categories column-center">
   <div class="inner-container">
+    <div class="toggle slide-previous">
+      <i class="fas fa-chevron-left"></i>
+    </div>
     <ul class="categories-list">
       @foreach($categories as $category)
         @foreach($category as $id)
@@ -12,5 +15,8 @@
         @endforeach
       @endforeach
     </ul>
+    <div class="toggle slide-next">
+      <i class="fas fa-chevron-right"></i>
+    </div>
   </div>
 </section>
