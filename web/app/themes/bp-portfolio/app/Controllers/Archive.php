@@ -17,4 +17,31 @@ class Archive extends Controller {
     if($postImageUrl) return 'background-image: url("' . $postImageUrl . '")';
     else return '';
   }
+
+  public static function randomPostIds($count) {
+    $latest = new \WP_Query( array (
+        'post__not_in' => array(get_the_ID()),
+        'orderby'               => 'rand',
+        'posts_per_page'        => 100,
+        'fields' => 'ids'
+    ));
+
+    return array_slice($latest->posts, 0, $count);
+  }
+
+  public static function getFeaturedPosts() {
+    $featuredPosts = new \WP_QUERY( array(
+      'post__not_in' => array(get_the_ID()),
+      'posts_per_page' => 100,
+      'meta_query' => array (
+        array (
+          'key' => 'is_featured',
+          'value' => '1',
+          'compare' => '=',
+        )
+      )
+      ));
+
+      return $featuredPosts->posts;
+  }
 }

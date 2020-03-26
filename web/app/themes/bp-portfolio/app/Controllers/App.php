@@ -63,17 +63,6 @@ class App extends Controller {
       return $isProjects  ? ['robots', 'noindex'] : ['', ''];
     }
 
-    public static function randomPostIds($count) {
-      $latest = new \WP_Query( array (
-          'post__not_in' => array(get_the_ID()),
-          'orderby'               => 'rand',
-          'posts_per_page'        => 100,
-          'fields' => 'ids'
-      ));
-
-      return array_slice($latest->posts, 0, $count);
-    }
-
     public function heroBgImage() {
       return get_field('hero_background_image', 'option');
     }

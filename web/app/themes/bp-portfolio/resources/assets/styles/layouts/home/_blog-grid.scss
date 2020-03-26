@@ -1,11 +1,16 @@
 .blog-grid {
   @include spacer;
 
+  @include atLaptopAndUp {
+    padding-bottom: 0;
+  }
+
   .blog-list {
     padding: 0;
     list-style: none;
     display: flex;
     flex-wrap: wrap;
+    margin: 0;
 
     a,
     .single-blog-title,
