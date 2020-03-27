@@ -19,7 +19,7 @@
         <p class="description">{{ $home_hero['text_section_2'] }}</p>
       @endif
       <div class="button-container mt-small">
-        <a href="{{ $portfolio_link }}" class="portfolio-link">
+        <a href="{{ $portfolio_link }}" class="scroll-down-home">
           <button class="button border white rotate">
             Learn More!
             <i class="fa fa-caret-right"></i>
