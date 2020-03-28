@@ -11,21 +11,19 @@
       </div>
 
       <div class="technologies-container">
-        <h3 class="blue tech-header">{{$tech_header}}</h3>
+        <h3 class="blue tech-header">{{$technologies['header']}}</h3>
         <div class="technologies">
-          @foreach($technologies as $tech)
-            @php
-              $specialize = $tech['specialize'] ? 'specialized' : '';
-            @endphp
-            <div class="tech-col {{$specialize}}">
-              <i class="{{$tech['icon']}}"></i>
-              <span class="tech-label">{{$tech['label']}}</span>
-              @if($specialize)
+          @foreach($technologies['list'] as $id)
+            <div class="tech-col {{TemplatePortfolio::isSpecialized($id)}}">
+              <i class="{{ get_field('fa_icon_class', $id) }}"></i>
+              <span class="tech-label">{{ get_the_title($id) }}</span>
+              @if(TemplatePortfolio::isSpecialized($id))
                 <div class="specialized-icon">
                   <i class="fas fa-star"></i>
                 </div>
               @endif
             </div>
+
           @endforeach
         </div>
       </div>

@@ -19,10 +19,6 @@ trait PortfolioAbout {
     return get_field('home_about_button')['title'];
   }
 
-  public function techHeader() {
-    return get_field('technologies_header');
-  }
-
   public function technologies() {
     return get_field('technologies');
   }
