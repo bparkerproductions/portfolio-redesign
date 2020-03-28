@@ -11,8 +11,8 @@
         {{get_field('title', $id)}}
       </h4>
       <div class="icon-container">
-        @foreach(get_field('tech', $id) as $tech)
-          <i class="{{$tech['icon']}}"></i>
+        @foreach(get_field('tech', $id) as $techID)
+          <i class="{{get_field('fa_icon_class', $techID)}}"></i>
         @endforeach
       </div>
     </div>

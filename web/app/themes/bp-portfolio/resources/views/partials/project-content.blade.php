@@ -32,8 +32,8 @@
     <div class="content-section spacer-small">
       <h2 class="blue">Technologies Used</h2>
       <div class="icon-container">
-        @foreach($tech_list as $tech)
-          <i class="{{$tech['icon']}}"></i>
+        @foreach($tech_list as $techID)
+        <i class="{{get_field('fa_icon_class', $techID)}}"></i>
         @endforeach
       </div>
       {!!$project_technologies!!}
