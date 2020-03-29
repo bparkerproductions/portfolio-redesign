@@ -4,14 +4,16 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="{{$robots_meta[0]}}" content="{{$robots_meta[1]}}"></meta>
 
+  @if($_SERVER['HTTP_HOST'] !== 'bparker.local')
   <!-- Global site tag (gtag.js) - Google Analytics -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-105342014-1"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-105342014-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
 
-    gtag('config', 'UA-105342014-1');
-  </script>
+      gtag('config', 'UA-105342014-1');
+    </script>
+  @endif
   @php wp_head() @endphp
 </head>
