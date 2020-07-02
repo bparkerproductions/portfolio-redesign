@@ -44,4 +44,9 @@ class Archive extends Controller {
 
       return $featuredPosts->posts;
   }
+
+  public static function isPostFeatured() {
+    $featured = get_field('blog_post_fields', get_the_ID())['is_featured'];
+    return $featured ? 'featured-post' : false;
+  }
 }
