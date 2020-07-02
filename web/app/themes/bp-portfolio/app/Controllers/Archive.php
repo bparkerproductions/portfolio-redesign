@@ -49,4 +49,8 @@ class Archive extends Controller {
     $featured = get_field('blog_post_fields', get_the_ID())['is_featured'];
     return $featured ? 'featured-post' : false;
   }
+
+  public static function postTechnologies() {
+    return get_field('blog_post_fields', get_the_ID())['tech'];
+  }
 }

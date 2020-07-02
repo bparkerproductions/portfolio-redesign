@@ -21,4 +21,11 @@
       @endforeach
     </div>
   </div>
+  @if(Archive::postTechnologies())
+    <div class="post-technologies">
+      @foreach(Archive::postTechnologies() as $techID)
+        <i class="{{get_field('fa_icon_class', $techID)}}"></i>
+      @endforeach
+    </div>
+  @endif
 </div>

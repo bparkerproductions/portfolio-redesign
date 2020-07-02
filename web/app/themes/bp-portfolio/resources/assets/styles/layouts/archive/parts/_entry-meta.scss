@@ -1,5 +1,6 @@
 .entry-meta {
   @import "meta-col";
+  @import "categories";
 
   display: flex;
   flex-direction: column;
@@ -11,33 +12,19 @@
     flex-direction: column;
   }
 
-  .categories {
-    a {
-      text-decoration: none;
-
-      @include atMobileAndUp {
-        padding-right: 5px;
-      }
-
-      &::after {
-        content: "-";
-        color: $shade-black;
-
-        @include atMobileAndUp {
-          margin-left: 5px;
-        }
-      }
-
-      &:last-child::after {
-        display: none;
-      }
-    }
-  }
-
   .categories,
   time {
     @include atTablet {
       font-size: 0.9em;
+    }
+  }
+
+  .post-technologies {
+    margin-top: 15px;
+
+    svg {
+      font-size: 1.25em;
+      margin: 0 3.5px;
     }
   }
 }
