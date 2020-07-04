@@ -20,7 +20,11 @@
   }
 
   .post-technologies {
-    margin-top: 15px;
+    margin-left: 25px;
+
+    @include atPortrait {
+      margin: 15px 0 5px 0;
+    }
 
     svg {
       font-size: 1.25em;
