@@ -11,6 +11,9 @@
         <div class="image-container">
           {!! get_the_post_thumbnail() !!}
         </div>
+
+        @include('partials/post-difficulty')
+
       </header>
       <div class="entry-content">
         @php the_content() @endphp
