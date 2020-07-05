@@ -16,6 +16,7 @@
     justify-content: space-between;
     align-items: center;
     cursor: pointer;
+    margin-bottom: 10px;
 
     .difficulty-text {
       margin: 0;
@@ -30,8 +31,11 @@
   }
 
   .difficulty-information {
-    margin-top: 10px;
     padding: 15px;
+    transition: all 0.25s ease;
+    box-sizing: border-box;
+    opacity: 0;
+    margin-bottom: 15px;
 
     @include atMobile {
       flex-direction: column;
@@ -47,6 +51,7 @@
 
     .difficulty-text {
       line-height: $line-height-medium;
+      margin: 0;
     }
   }
 }
